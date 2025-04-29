@@ -111,12 +111,18 @@ footer {
 }
 
 .profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 160px;  /* Adjust as necessary */
+    height: 160px; /* Ensure the height matches the width to keep the image square */
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 1em auto;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  }
-  
+}
+
+@media screen and (max-width: 600px) {
+    .profile-pic {
+        width: 120px; /* Smaller size on mobile devices */
+        height: 120px;
+    }
+}
