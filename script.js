@@ -1,5 +1,5 @@
 // Dynamic welcome message based on the time of day
-window.onload = function() {
+window.onload = function () {
     const welcomeMessage = document.getElementById('welcomeMessage');
     const currentHour = new Date().getHours();
     let message;
