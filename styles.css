@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 150px; /* Padding to prevent content being hidden by sticky header */
 }
 
 body {
@@ -96,7 +100,6 @@ footer {
     display: none;
 }
 
-/* Extra decorations */
 .skills-category h3 {
     margin-bottom: 5px;
     color: #444;
@@ -106,3 +109,14 @@ footer {
 .education-entry h3 {
     color: #444;
 }
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 1em auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
