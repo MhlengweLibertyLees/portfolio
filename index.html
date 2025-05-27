@@ -2,110 +2,253 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Liberty Chauke Portfolio</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons (optional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <!-- AOS CSS for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
+  
   <script src="script.js" defer></script>
 </head>
-<body>
-  <header>
-    <h1 id="welcomeMessage"></h1>
-    <p class="subtitle">Final Year Computer Science Student | Seeking WIL Internship | Aspiring Software Developer</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="profile.png" alt="Liberty Chauke" class="profile-pic">
-    <p>I am a final-year Computer Science student at Tshwane University of Technology (Faculty of ICT), passionate about technology, problem-solving, and software development. I am currently seeking an internship opportunity for Work Integrated Learning (WIL) to apply and grow my technical skills in a professional environment.</p>
-    <p>My academic background has equipped me with strong skills in programming, software engineering, and system analysis. I am eager to contribute to innovative projects, collaborate with experienced teams, and continue learning to become a valuable asset in the IT industry.</p>
-    <p>I am highly motivated, adaptable, and committed to excellence in every task I undertake.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-entry">
-      <h3>Tshwane University of Technology</h3>
-      <p>Diploma in Computer Science (Extended)</p>
-      <p>January 2022 - December 2025</p>
+<body data-bs-spy="scroll" data-bs-target="#portfolioNavbar" data-bs-offset="80" tabindex="0" class="d-flex flex-column min-vh-100">
+  
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-category">
-      <h3>Industry Knowledge</h3>
-      <ul>
-        <li>Software Development</li>
-        <li>Systems Analysis</li>
-        <li>Problem Solving</li>
-        <li>Web Application Development</li>
-        <li>Web Application Security</li>
-      </ul>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <!-- Dynamic Welcome Message from script.js -->
+      <a class="navbar-brand" href="#">
+        <span id="welcomeMessage"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar" aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="portfolioNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="skills-category">
-      <h3>Tools & Technologies</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java Programming (OOP, AOP)</li>
-        <li>SQL, JavaDB, PL/SQL</li>
-        <li>Kotlin</li>
-        <li>Jakarta Persistence, JPQL, JPA</li>
-        <li>Model-View-Controller (MVC)</li>
-        <li>JavaServer Pages (JSP)</li>
-      </ul>
+  </nav>
+  
+  <!-- Main Content -->
+  <main class="container my-5 flex-grow-1">
+    
+    <!-- About Section -->
+    <section id="about" class="mb-5 scroll-section" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="profile.png" alt="Liberty Chauke" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
+        </div>
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p class="lead">
+            I am a final-year Computer Science student at Tshwane University of Technology (Faculty of ICT) with a passion for technology, problem-solving, and software development. I am currently seeking a Work Integrated Learning (WIL) internship to further enhance my technical skills in a professional environment.
+          </p>
+          <p class="lead">
+            My academic background has provided a solid foundation in programming, software engineering, and system analysis. I look forward to contributing to innovative projects and collaborating with experienced teams.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="mb-5 scroll-section" data-aos="fade-up">
+      <h2>Education</h2>
+      <!-- Matric -->
+      <div class="card shadow mb-4">
+        <div class="card-body">
+          <h3 class="card-title">Semendhe High School</h3>
+          <p class="card-text">Matriculation – 2020</p>
+        </div>
+      </div>
+      <!-- Diploma -->
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title">Tshwane University of Technology</h3>
+          <p class="card-text">Diploma in Computer Science (Extended)</p>
+          <p class="card-text"><small class="text-muted">Started in 2022 – Currently in final year for my qualification.</small></p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="mb-5 scroll-section" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="row">
+        <!-- Industry Knowledge -->
+        <div class="col-md-4">
+          <div class="card shadow mb-3" data-aos="zoom-in">
+            <div class="card-body">
+              <h4 class="card-title">Industry Knowledge</h4>
+              <ul class="list-unstyled">
+                <li>Software Development</li>
+                <li>Systems Analysis</li>
+                <li>Problem Solving</li>
+                <li>Web Application Development</li>
+                <li>Web Application Security</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tools & Technologies -->
+        <div class="col-md-4">
+          <div class="card shadow mb-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card-body">
+              <h4 class="card-title">Tools &amp; Technologies</h4>
+              <ul class="list-unstyled">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Java Programming (OOP, AOP)</li>
+                <li>SQL, JavaDB, PL/SQL</li>
+                <li>Kotlin</li>
+                <li>Jakarta Persistence, JPQL, JPA</li>
+                <li>MVC, JSP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Interpersonal Skills -->
+        <div class="col-md-4">
+          <div class="card shadow mb-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card-body">
+              <h4 class="card-title">Interpersonal Skills</h4>
+              <ul class="list-unstyled">
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Commitment to Excellence</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="mb-5 scroll-section" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="row">
+        <!-- Learner Management System -->
+        <div class="col-md-6 mb-4" data-aos="flip-up">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Learner Management System</h3>
+              <p class="card-text">
+                A Java EE web application for managing learner records using Servlets, JSPs, and JPA. It supports CRUD operations—including student registration, qualification updates, and record deletion.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Workers Management System -->
+        <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-delay="100">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Workers Management System</h3>
+              <p class="card-text">
+                A Java EE web application designed to manage worker data through Servlets, JSPs, and JPA. It encompasses full CRUD operations.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Secure Messages App -->
+        <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-delay="300">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Secure Messages App</h3>
+              <p class="card-text">
+                A Java GUI application that implements Caesar Cipher encryption for secure communication.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- SASO Mobile App -->
+        <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-delay="400">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">SASO Mobile App (TUT Industry Project)</h3>
+              <p class="card-text">
+                Currently participating in TUT Industry Projects for SASO Mobile, where I am one of the developers responsible for developing the front-end part of the SASO Mobile application.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Personal Expense Tracker -->
+        <div class="col-md-6 mb-4" data-aos="flip-up" data-aos-delay="500">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title">Personal Expense Tracker</h3>
+              <p class="card-text">
+                This application empowers users to efficiently track, manage, and analyze their daily expenses. Developed using a robust Java EE stack and following the MVC design pattern, the project leverages Enterprise JavaBeans (EJBs) to persist data into the database. Additionally, Servlets work in tandem with EJBs to send information seamlessly to JSP files for dynamic content display. The back end employs JPA, JPQL, and JDBC with JavaDB, while the front end is built with HTML and Bootstrap. The application runs on GlassFish Server and was developed using NetBeans IDE.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="mb-5 scroll-section" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <div class="card shadow">
+        <div class="card-body">
+          <p><strong>Phone:</strong> 063 804 5803 / 076 015 4184</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:libertyengetelo@gmail.com">libertyengetelo@gmail.com</a>
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/liberty-chauke-320188291" target="_blank">View LinkedIn</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/MhlengweLibertyLees" target="_blank">View GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-primary rounded" title="Back to Top">&#8679;</button>
+  
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Liberty Chauke Portfolio. All rights reserved.</p>
     </div>
-    <div class="skills-category">
-      <h3>Interpersonal Skills</h3>
-      <ul>
-        <li>Teamwork</li>
-        <li>Communication</li>
-        <li>Adaptability</li>
-        <li>Commitment to Excellence</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Learner Management System</h3>
-      <p>A Java EE web application for managing learner records using Servlets, JSPs, and JPA. It supports CRUD operations and includes features such as learner registration, qualification updates, deletion of learner information, displaying a partial list of learners, and viewing all registered students.</p>
-    </div>
-    <div class="project">
-      <h3>Workers Management System</h3>
-      <p>A Java EE web application designed to manage worker data using Servlets, JSPs, and JPA. Supports CRUD operations.</p>
-    </div>
-    <div class="project">
-      <h3>Sum Calculator</h3>
-      <p>A JavaScript application that calculates the sum of two numbers entered by the user.</p>
-    </div>
-    <div class="project">
-      <h3>Secure Messages App</h3>
-      <p>A Java GUI application implementing Caesar Cipher encryption for secure communication.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p><strong>Phone:</strong> 063 804 5803 / 076 015 4184</p>
-      <p><strong>Email:</strong> <a href="mailto:libertyengetelo@gmail.com">libertyengetelo@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/liberty-chauke-320188291" target="_blank">www.linkedin.com/in/liberty-chauke-320188291</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/MhlengweLibertyLees" target="_blank">github.com/MhlengweLibertyLees</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Liberty Chauke Portfolio. All rights reserved.</p>
   </footer>
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS JS for scroll animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
 </body>
 </html>
