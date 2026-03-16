@@ -73,10 +73,11 @@
     .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1;}
     .stat-num span{color:var(--accent);}
     .stat-label{font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+
+    /* PHOTO CARD */
     .hero-photo-wrap{opacity:0;animation:fadeUp .8s .6s forwards;flex-shrink:0;}
-    .hero-photo-card{width:210px;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
-    .hero-photo-card img{width:100%;display:block;}
-    .photo-placeholder{width:210px;height:248px;background:linear-gradient(135deg,var(--bg3),var(--card));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--muted);font-size:.65rem;font-family:'Space Mono',monospace;letter-spacing:.06em;text-align:center;padding:20px;}
+    .hero-photo-card{width:210px;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);}
+    .hero-photo-card img{width:100%;height:248px;display:block;object-fit:cover;object-position:top center;}
     .photo-caption{background:var(--bg3);padding:14px 16px;border-top:1px solid var(--border);}
     .photo-caption-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;margin-bottom:3px;}
     .photo-caption-role{font-family:'Space Mono',monospace;font-size:.56rem;color:var(--accent);letter-spacing:.08em;}
@@ -224,7 +225,7 @@
   </ul>
   <div class="nav-right">
     <div class="open-badge">Open to Work</div>
-    <a href="Liberty_Chauke_-_WIL-Internship.pdf" download class="nav-cta">↓ CV</a>
+    <a href="Liberty_Chauke_CV.pdf" download class="nav-cta">↓ CV</a>
     <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
   </div>
 </nav>
@@ -249,7 +250,10 @@
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">View My Work →</a>
         <a href="https://github.com/MhlengweLibertyLees" target="_blank" rel="noopener" class="btn-ghost">GitHub</a>
-        <a href="Liberty_Chauke_-_WIL-Internship.pdf" download class="btn-cv"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a>
+        <a href="Liberty_Chauke_CV.pdf" download class="btn-cv">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
       </div>
       <div class="hero-stats">
         <div><div class="stat-num">5<span>+</span></div><div class="stat-label">Projects Built</div></div>
@@ -258,13 +262,11 @@
         <div><div class="stat-num">4<span>yrs</span></div><div class="stat-label">of Learning</div></div>
       </div>
     </div>
+
+    <!-- PHOTO — place profile.png in the same folder as this file -->
     <div class="hero-photo-wrap">
       <div class="hero-photo-card">
-        <!-- REPLACE src below with your photo path e.g. src="profile.png" -->
-        <div class="photo-placeholder">
-          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
-          <span>Add photo.jpg<br/>to repo folder</span>
-        </div>
+        <img src="profile.png" alt="Liberty Engetelo Chauke" />
         <div class="photo-caption">
           <div class="photo-caption-name">Liberty E. Chauke</div>
           <div class="photo-caption-role">Software Engineer Intern</div>
@@ -337,14 +339,14 @@
       <div class="t-dot"></div>
       <div class="t-year">2024 — Year 3 of CS</div>
       <div class="t-title">Deep dive: OOP, Architecture, Assembly, Linux & Databases</div>
-      <div class="t-desc">The most technically intensive year. Studied Advanced Discrete Structures, OOP, Advanced OOP, Information Security, and Operating Systems — where I worked hands-on with <strong>Linux Ubuntu</strong> (CLI, file system, processes). For Computer Architecture & Organisation, I programmed in <strong>Assembly language</strong> using MPLAB IDE 8.91 and Proteus 7, building a countdown (1→10 and 10→0) on a 7-segment display with a PIC16F62X microcontroller (reference: "Computer Organization and Architecture, 8th Ed."). Database Principles introduced me to the full Database Life Cycle — designing, creating and administering databases using <strong>Oracle XE 2</strong> and <strong>SQL*Plus</strong>: data insertion, retrieval, normalisation, ER modelling, and how database design fits into the Software Development Life Cycle.</div>
+      <div class="t-desc">The most technically intensive year. Studied Advanced Discrete Structures, OOP, Advanced OOP, Information Security, and Operating Systems — where I worked hands-on with <strong>Linux Ubuntu</strong> (CLI, file system, processes). For Computer Architecture &amp; Organisation, I programmed in <strong>Assembly language</strong> using MPLAB IDE 8.91 and Proteus 7, building a countdown (1→10 and 10→0) on a 7-segment display with a PIC16F62X microcontroller. Database Principles introduced me to the full Database Life Cycle — designing, creating and administering databases using <strong>Oracle XE 2</strong> and <strong>SQL*Plus</strong>.</div>
       <div class="t-chips"><span class="t-chip">OOP &amp; Advanced OOP</span><span class="t-chip">Assembly (MPLAB + Proteus 7)</span><span class="t-chip">PIC16F62X</span><span class="t-chip">Linux Ubuntu</span><span class="t-chip">Oracle XE 2 + SQL*Plus</span><span class="t-chip">Info Security</span></div>
     </div>
     <div class="timeline-item">
       <div class="t-dot"></div>
       <div class="t-year">2025 — Final 4 Modules</div>
       <div class="t-title">Internet Programming, Mobile Computing, Database & Software Project</div>
-      <div class="t-desc"><strong>Internet Programming</strong> (the module I enjoyed most) — a follow-up to Advanced OOP, introducing enterprise web development with the JEE framework: Servlets, JSPs, EJBs, JPA, and web security. Applications follow the 3-tier model (presentation, business, persistence) and are deployed on GlassFish or Tomcat using NetBeans. I built fully functional enterprise systems. <strong>Mobile Computing</strong> — designing and implementing Android apps using Kotlin: UI design, multi-threading, Android storage techniques, and Location-Based Services. <strong>Database Programming</strong> — deepened SQL/PL-SQL skills across web and mobile platforms following the DBLC, including data retrieval, normalisation, and integrating database design into the SDLC. <strong>Software Project</strong> — built and formally presented a complete group project. Expected to complete end of 2025; officially graduating 2026.</div>
+      <div class="t-desc"><strong>Internet Programming</strong> (the module I enjoyed most) — enterprise web development with the JEE framework: Servlets, JSPs, EJBs, JPA, and web security. Applications follow the 3-tier model and are deployed on GlassFish or Tomcat. <strong>Mobile Computing</strong> — designing Android apps using Kotlin: UI design, multi-threading, Android storage techniques, and Location-Based Services. <strong>Database Programming</strong> — deepened SQL/PL-SQL skills across web and mobile platforms. <strong>Software Project</strong> — built and formally presented a complete group project. Officially graduating 2026.</div>
       <div class="t-chips"><span class="t-chip">Java EE (Servlets/JSP/EJB/JPA)</span><span class="t-chip">GlassFish / Tomcat</span><span class="t-chip">Kotlin / Android</span><span class="t-chip">SQL / PL-SQL</span><span class="t-chip">Software Project (Group)</span></div>
     </div>
     <div class="timeline-item">
@@ -364,10 +366,10 @@
   <p class="section-sub reveal">Click a category — bars reflect my honest self-assessment.</p>
   <div class="skills-layout reveal">
     <div class="skill-tabs" id="skillTabs">
-      <div class="skill-tab active" data-panel="languages"><span class="skill-tab-icon">⌨️</span><span class="skill-tab-label">Languages</span><span class="skill-tab-count">8</span></div>
+      <div class="skill-tab active" data-panel="languages"><span class="skill-tab-icon">⌨️</span><span class="skill-tab-label">Languages</span><span class="skill-tab-count">9</span></div>
       <div class="skill-tab" data-panel="web"><span class="skill-tab-icon">🌐</span><span class="skill-tab-label">Web & Frameworks</span><span class="skill-tab-count">8</span></div>
-      <div class="skill-tab" data-panel="databases"><span class="skill-tab-icon">🗄️</span><span class="skill-tab-label">Databases</span><span class="skill-tab-count">7</span></div>
-      <div class="skill-tab" data-panel="tools"><span class="skill-tab-icon">🛠️</span><span class="skill-tab-label">Tools & DevOps</span><span class="skill-tab-count">6</span></div>
+      <div class="skill-tab" data-panel="databases"><span class="skill-tab-icon">🗄️</span><span class="skill-tab-label">Databases</span><span class="skill-tab-count">8</span></div>
+      <div class="skill-tab" data-panel="tools"><span class="skill-tab-icon">🛠️</span><span class="skill-tab-label">Tools & DevOps</span><span class="skill-tab-count">7</span></div>
       <div class="skill-tab" data-panel="practices"><span class="skill-tab-icon">🔄</span><span class="skill-tab-label">Dev Practices</span><span class="skill-tab-count">5</span></div>
       <div class="skill-tab" data-panel="cloud"><span class="skill-tab-icon">☁️</span><span class="skill-tab-label">Cloud (In Progress)</span><span class="skill-tab-count">4</span></div>
     </div>
@@ -407,7 +409,7 @@
     <div class="proj-card reveal d1">
       <div class="proj-num">04</div>
       <div class="proj-name">Assembly: 7-Segment Countdown</div>
-      <div class="proj-desc">Built a hardware simulation counting 0→9 and 9→0 on a 7-segment display using Assembly language, PIC16F62X microcontroller, resistors and button components. Designed in Proteus 7 and programmed in MPLAB IDE 8.91. Reference: Computer Organization & Architecture, 8th Ed.</div>
+      <div class="proj-desc">Built a hardware simulation counting 0→9 and 9→0 on a 7-segment display using Assembly language, PIC16F62X microcontroller, resistors and button components. Designed in Proteus 7 and programmed in MPLAB IDE 8.91.</div>
       <div class="proj-stack"><span>Assembly</span><span>MPLAB IDE 8.91</span><span>Proteus 7</span><span>PIC16F62X</span><span>7-Seg Display</span></div>
       <a href="https://github.com/MhlengweLibertyLees" target="_blank" rel="noopener" class="proj-link">View →</a>
     </div>
@@ -447,10 +449,22 @@
     <p class="section-sub reveal" style="margin:0 auto 22px;text-align:center;">Open to internships, WIL placements and graduate opportunities.<br>Available immediately — remote or on-site.</p>
     <a href="mailto:libertyengetelo@gmail.com" class="contact-email reveal">libertyengetelo@gmail.com</a>
     <div class="contact-links reveal">
-      <a href="tel:+27638045803" class="contact-link"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 4h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 11a16 16 0 0 0 4.9 4.9l1.36-1.15a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 17l.92-.08Z"/></svg>063 804 5803</a>
-      <a href="https://github.com/MhlengweLibertyLees" target="_blank" rel="noopener" class="contact-link"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
-      <a href="https://linkedin.com/in/liberty-chauke-320188291" target="_blank" rel="noopener" class="contact-link"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
-      <a href="Liberty_Chauke_CV.pdf" download class="contact-link"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download CV</a>
+      <a href="tel:+27638045803" class="contact-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 4h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 11a16 16 0 0 0 4.9 4.9l1.36-1.15a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 17l.92-.08Z"/></svg>
+        063 804 5803
+      </a>
+      <a href="https://github.com/MhlengweLibertyLees" target="_blank" rel="noopener" class="contact-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/liberty-chauke-320188291" target="_blank" rel="noopener" class="contact-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="Liberty_Chauke_CV.pdf" download class="contact-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
     </div>
   </div>
 </section>
