@@ -1,14 +1,3 @@
-/*
-  script.js
-  - Welcome message
-  - Preloader
-  - AOS + GSAP intro animation
-  - Skill bars (observable)
-  - Theme toggle
-  - Smooth internal scroll, contact form (mailto)
-  - Back to top
-*/
-
 document.addEventListener('DOMContentLoaded', function(){
 
   /* Welcome message */
