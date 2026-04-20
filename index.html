@@ -2,397 +2,407 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liberty Chauke · Full-Stack & AI Systems Engineer</title>
-  <meta name="description" content="Liberty Chauke – Full-Stack Developer & Systems Engineer with expertise in Data Analysis, AI Integration, Java EE, PHP, and intelligent systems. CS Diploma (TUT). Open to graduate roles & internships.">
+  <meta name="description" content="Liberty Chauke – Full-Stack Developer & Systems Engineer | Data Analysis & AI Integration. CS Diploma (TUT). Open to junior/graduate roles.">
   <meta name="keywords" content="Liberty Chauke, Full-Stack Developer, AI Integration, Data Analysis, Java EE, PHP, MySQL, Rule-Based AI, South Africa, TUT">
   <meta name="author" content="Liberty Engetelo Chauke">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#00e5c0">
+  <meta name="theme-color" content="#0E6655">
   <link rel="canonical" href="https://MhlengweLibertyLees.github.io">
-  
-  <!-- Open Graph -->
   <meta property="og:title" content="Liberty Chauke · Full-Stack & AI Systems Engineer">
-  <meta property="og:description" content="Building intelligent data systems, analytics platforms, and full-stack applications. Open for Junior/Trainee roles.">
+  <meta property="og:description" content="Building intelligent data systems, analytics platforms, and full-stack applications.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://MhlengweLibertyLees.github.io">
   <meta property="og:image" content="https://MhlengweLibertyLees.github.io/profile.png">
-  
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --bg:#ffffff;
+      --bg2:#f4f9f7;
+      --bg3:#e8f5f0;
+      --card:#ffffff;
+      --border:rgba(14,102,85,0.12);
+      --border2:rgba(14,102,85,0.25);
+      --text:#1C2833;
+      --muted:#566573;
+      --light:#8fa3a0;
+      --teal:#0E6655;
+      --teal2:#148F77;
+      --teal3:#1ABC9C;
+      --teal-pale:#D5F5E3;
+      --navy:#0D2137;
+      --shadow:rgba(14,102,85,0.1);
     }
+    body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:15px;line-height:1.65;overflow-x:hidden;}
+    ::-webkit-scrollbar{width:4px;}
+    ::-webkit-scrollbar-track{background:var(--bg2);}
+    ::-webkit-scrollbar-thumb{background:var(--teal);border-radius:4px;}
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal3));width:0%;z-index:200;}
 
-    :root {
-      --bg: #07090d;
-      --bg2: #0b0f16;
-      --bg3: #0f1520;
-      --card: #0d1320;
-      --border: rgba(255, 255, 255, 0.07);
-      --text: #dde4ed;
-      --muted: #5a6b7d;
-      --accent: #00e5c0;
-      --blue: #2196f3;
-      --purple: #8b6fe8;
-      --warn: #ff6b35;
-      --green: #22c55e;
-    }
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 6vw;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px;}
+    .nav-pulse{width:8px;height:8px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite;}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(14,102,85,0.4);}50%{box-shadow:0 0 0 6px rgba(14,102,85,0);}}
+    .open-badge{font-family:'Space Mono',monospace;font-size:0.58rem;background:var(--teal-pale);color:var(--teal);border:1px solid var(--border2);padding:3px 10px;border-radius:40px;letter-spacing:0.06em;display:flex;align-items:center;gap:6px;}
+    .open-badge::before{content:'';width:5px;height:5px;background:var(--teal);border-radius:50%;animation:pulse 1.5s infinite;}
+    .nav-links{display:flex;gap:2rem;list-style:none;}
+    .nav-links a{font-family:'Space Mono',monospace;font-size:0.65rem;color:var(--muted);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--teal);}
+    .nav-cta{font-family:'Space Mono',monospace;font-size:0.68rem;font-weight:700;background:var(--teal);color:#fff;padding:8px 18px;border-radius:4px;text-decoration:none;transition:all 0.2s;}
+    .nav-cta:hover{background:var(--teal2);transform:translateY(-1px);}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+    .hamburger span{width:22px;height:2px;background:var(--navy);transition:0.2s;display:block;}
+    .mobile-menu{display:none;position:fixed;top:65px;left:0;right:0;background:rgba(255,255,255,0.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:24px 6vw;z-index:99;flex-direction:column;gap:20px;}
+    .mobile-menu.open{display:flex;}
+    .mobile-menu a{font-family:'Space Mono',monospace;color:var(--muted);text-decoration:none;text-transform:uppercase;font-size:0.8rem;}
+    @media(max-width:860px){.nav-links{display:none;}.hamburger{display:flex;}}
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      line-height: 1.65;
-      overflow-x: hidden;
-      cursor: none;
-    }
+    section{padding:90px 6vw;}
+    .section-label{font-family:'Space Mono',monospace;font-size:0.64rem;color:var(--teal);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
+    .section-label::after{content:'';flex:1;height:1px;background:var(--border);max-width:52px;}
+    .section-title{font-family:'Syne',sans-serif;font-size:clamp(1.7rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin-bottom:16px;color:var(--navy);}
+    .section-sub{color:var(--muted);max-width:550px;margin-bottom:48px;font-size:0.92rem;}
 
-    /* custom cursor only for desktop */
-    @media (min-width: 1024px) {
-      .cursor, .cursor-ring { display: block; }
-      body { cursor: none; }
-    }
-    @media (max-width: 1023px) {
-      .cursor, .cursor-ring { display: none; }
-      body { cursor: auto; }
-    }
+    /* HERO */
+    .hero{min-height:100vh;display:flex;align-items:center;padding:120px 6vw 80px;background:linear-gradient(135deg,#f4f9f7 0%,#ffffff 60%);}
+    .hero-inner{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center;max-width:1200px;margin:0 auto;width:100%;}
+    .hero-tag{font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--teal);margin-bottom:20px;background:var(--teal-pale);display:inline-block;padding:6px 14px;border-radius:20px;border:1px solid var(--border2);}
+    .hero-name{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.8rem,7vw,5.2rem);line-height:0.95;letter-spacing:-0.04em;margin-bottom:18px;}
+    .hero-name .dim{color:var(--muted);}
+    .hero-name .hi{color:var(--teal);}
+    .hero-role{font-family:'Space Mono',monospace;font-size:0.82rem;color:var(--teal2);margin-bottom:20px;}
+    .hero-desc{max-width:520px;color:var(--muted);margin-bottom:32px;line-height:1.75;}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;}
+    .btn-primary,.btn-ghost,.btn-cv{font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;padding:12px 24px;border-radius:4px;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;}
+    .btn-primary{background:var(--teal);color:#fff;}
+    .btn-primary:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 8px 28px var(--shadow);}
+    .btn-ghost{border:1.5px solid var(--teal);color:var(--teal);}
+    .btn-ghost:hover{background:var(--teal-pale);}
+    .btn-cv{border:1px solid var(--border2);color:var(--text);}
+    .btn-cv:hover{border-color:var(--teal);color:var(--teal);}
+    .hero-stats{display:flex;gap:40px;border-top:1px solid var(--border);padding-top:30px;flex-wrap:wrap;}
+    .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1;color:var(--navy);}
+    .stat-num span{color:var(--teal);}
+    .stat-label{font-size:0.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-top:5px;}
+    .hero-photo-card{width:210px;background:var(--card);border:1.5px solid var(--border2);border-radius:16px;overflow:hidden;box-shadow:0 8px 32px var(--shadow);}
+    .hero-photo-card img{width:100%;height:248px;object-fit:cover;display:block;}
+    .photo-caption{padding:12px 16px;background:var(--bg2);}
+    .photo-caption-name{font-weight:700;font-size:0.85rem;color:var(--navy);}
+    .photo-caption-role{font-size:0.7rem;color:var(--teal);margin-top:2px;}
+    @media(max-width:860px){.hero-inner{grid-template-columns:1fr;}.hero-photo-card{display:none;}}
 
-    .cursor {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      mix-blend-mode: difference;
-    }
-    .cursor-ring {
-      width: 32px;
-      height: 32px;
-      border: 1.5px solid rgba(0, 229, 192, 0.4);
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 9998;
-      transition: transform 0.12s, width 0.2s, height 0.2s;
-    }
+    /* ABOUT */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+    @media(max-width:768px){.about-grid{grid-template-columns:1fr;}}
+    .tag{font-size:0.72rem;border:1px solid var(--border2);color:var(--teal);padding:4px 12px;border-radius:20px;display:inline-block;margin:3px;background:var(--teal-pale);}
+    .edu-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px;}
 
-    ::-webkit-scrollbar { width: 3px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+    /* EXPERIENCE */
+    .exp-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 2px 12px var(--shadow);}
+    .exp-title{font-weight:800;font-size:1.05rem;margin-bottom:6px;color:var(--navy);}
+    .exp-meta{font-family:'Space Mono',monospace;font-size:0.65rem;color:var(--teal);margin-bottom:14px;}
+    .exp-desc{color:var(--muted);font-size:0.85rem;line-height:1.7;list-style:none;}
+    .exp-desc li{margin-bottom:8px;display:flex;gap:8px;}
+    .exp-desc li::before{content:"▸";color:var(--teal);flex-shrink:0;}
 
-    #scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--blue));
-      width: 0%;
-      z-index: 200;
-    }
+    /* SKILLS */
+    .skills-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;}
+    @media(max-width:700px){.skills-layout{grid-template-columns:1fr;}}
+    .skill-tab{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:10px;border:1px solid var(--border);background:var(--card);cursor:pointer;margin-bottom:10px;transition:all 0.2s;}
+    .skill-tab.active,.skill-tab:hover{border-color:var(--teal2);background:var(--teal-pale);}
+    .skill-tab-icon{font-size:16px;}
+    .skill-tab-label{font-weight:700;flex:1;color:var(--navy);}
+    .skill-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;box-shadow:0 2px 12px var(--shadow);}
+    .sbar{margin-bottom:18px;}
+    .sbar-top{display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;}
+    .sbar-name{color:var(--text);}
+    .sbar-pct{color:var(--teal);font-weight:700;}
+    .sbar-track{height:4px;background:var(--bg3);border-radius:4px;overflow:hidden;}
+    .sbar-fill{width:0%;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal3));border-radius:4px;transition:width 0.9s cubic-bezier(0.2,0.9,0.4,1.1);}
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 6vw;
-      background: rgba(7, 9, 13, 0.9);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-    }
+    /* PROJECTS */
+    .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;margin-top:20px;}
+    .proj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:all 0.25s;position:relative;}
+    .proj-card:hover{transform:translateY(-4px);border-color:var(--teal2);box-shadow:0 12px 36px var(--shadow);}
+    .proj-badge{position:absolute;top:16px;right:16px;font-family:'Space Mono',monospace;font-size:0.55rem;background:var(--teal);color:#fff;padding:3px 10px;border-radius:20px;}
+    .proj-name{font-size:1.1rem;font-weight:800;margin-bottom:8px;color:var(--navy);}
+    .proj-desc{font-size:0.83rem;color:var(--muted);margin:10px 0;line-height:1.65;}
+    .proj-stack{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;}
+    .proj-stack span{font-family:'Space Mono',monospace;font-size:0.55rem;background:var(--bg2);border:1px solid var(--border);padding:3px 8px;border-radius:4px;color:var(--teal2);}
+    .proj-link{font-family:'Space Mono',monospace;font-size:0.62rem;color:var(--teal);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:700;}
+    .proj-link:hover{color:var(--teal2);}
 
-    .nav-logo {
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: var(--text);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    /* CERTS */
+    .certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
+    .cert-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:border-color 0.2s;}
+    .cert-card:hover{border-color:var(--teal2);}
+    .cert-issuer{font-size:0.62rem;color:var(--teal);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;font-family:'Space Mono',monospace;}
+    .cert-name{font-weight:700;margin-bottom:6px;color:var(--navy);font-size:0.9rem;}
+    .cert-badge{display:inline-block;font-size:0.58rem;margin-top:10px;padding:3px 10px;border-radius:20px;background:var(--teal-pale);color:var(--teal);font-family:'Space Mono',monospace;}
+    .cert-badge.wip{background:#FEF9F0;color:#E67E22;border:1px solid rgba(230,126,34,0.3);}
 
-    .nav-pulse {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
+    /* CONTACT */
+    .contact-inner{max-width:650px;margin:0 auto;text-align:center;}
+    .contact-email{font-size:1.3rem;font-weight:700;color:var(--teal);text-decoration:none;display:block;margin-bottom:8px;}
+    .contact-email:hover{color:var(--teal2);}
+    .contact-links{display:flex;justify-content:center;gap:12px;margin-top:28px;flex-wrap:wrap;}
 
-    @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(0, 229, 192, 0.5); }
-      50% { box-shadow: 0 0 0 6px rgba(0, 229, 192, 0); }
-    }
-
-    .open-badge {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.58rem;
-      background: rgba(34, 197, 94, 0.12);
-      color: var(--green);
-      border: 1px solid rgba(34, 197, 94, 0.3);
-      padding: 3px 9px;
-      border-radius: 40px;
-      letter-spacing: 0.06em;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .open-badge::before {
-      content: '';
-      width: 5px;
-      height: 5px;
-      background: var(--green);
-      border-radius: 50%;
-      animation: pulse 1.5s infinite;
-    }
-
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a { font-family: 'Space Mono', monospace; font-size: 0.65rem; color: var(--muted); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--accent); }
-    .nav-cta { font-family: 'Space Mono', monospace; font-size: 0.68rem; font-weight: 700; background: var(--accent); color: var(--bg); padding: 8px 18px; border-radius: 4px; text-decoration: none; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { width: 22px; height: 1.5px; background: var(--text); transition: 0.2s; }
-    .mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: rgba(7, 9, 13, 0.98); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 24px 6vw; z-index: 99; flex-direction: column; gap: 20px; }
-    .mobile-menu.open { display: flex; }
-    .mobile-menu a { font-family: 'Space Mono', monospace; color: var(--muted); text-decoration: none; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; }
-
-    @media (max-width: 860px) { .nav-links { display: none; } .hamburger { display: flex; } }
-
-    /* sections */
-    section { padding: 90px 6vw; }
-    .section-label { font-family: 'Space Mono', monospace; font-size: 0.64rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); max-width: 52px; }
-    .section-title { font-family: 'Syne', sans-serif; font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 16px; }
-    .section-sub { color: var(--muted); max-width: 550px; margin-bottom: 48px; font-size: 0.92rem; }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 120px 6vw 80px;
-      position: relative;
-    }
-    .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 50px; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; }
-    .hero-name { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(2.8rem, 7vw, 5.2rem); line-height: 0.95; letter-spacing: -0.04em; margin-bottom: 18px; }
-    .hero-name .dim { color: var(--muted); }
-    .hero-name .hi { color: var(--accent); }
-    .hero-role { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: var(--blue); margin-bottom: 20px; }
-    .hero-desc { max-width: 520px; color: var(--muted); margin-bottom: 32px; line-height: 1.75; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
-    .btn-primary, .btn-ghost, .btn-cv { font-family: 'Space Mono', monospace; font-size: 0.7rem; font-weight: 700; padding: 12px 24px; border-radius: 4px; text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
-    .btn-primary { background: var(--accent); color: var(--bg); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0, 229, 192, 0.3); }
-    .btn-ghost { border: 1px solid rgba(0, 229, 192, 0.3); color: var(--accent); }
-    .btn-ghost:hover { background: rgba(0, 229, 192, 0.05); border-color: var(--accent); }
-    .btn-cv { border: 1px solid var(--border); color: var(--text); }
-    .hero-stats { display: flex; gap: 40px; border-top: 1px solid var(--border); padding-top: 30px; flex-wrap: wrap; }
-    .stat-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; line-height: 1; }
-    .stat-num span { color: var(--accent); }
-    .stat-label { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 5px; }
-    .hero-photo-card { width: 210px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
-    .hero-photo-card img { width: 100%; height: 248px; object-fit: cover; display: block; }
-    .photo-caption { padding: 12px 16px; background: var(--bg3); }
-    @media (max-width: 860px) { .hero-inner { grid-template-columns: 1fr; } .hero-photo-card { display: none; } }
-
-    /* cards, timeline, skills */
-    .exp-card, .edu-card, .timeline-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin-bottom: 24px; }
-    .exp-item { margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
-    .exp-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
-    .exp-meta { font-family: 'Space Mono', monospace; font-size: 0.65rem; color: var(--accent); margin-bottom: 12px; }
-    .exp-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.7; list-style: none; padding-left: 0; }
-    .exp-desc li { margin-bottom: 8px; display: flex; gap: 8px; }
-    .exp-desc li::before { content: "▸"; color: var(--accent); }
-
-    .skills-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; }
-    .skill-tab { display: flex; align-items: center; gap: 12px; padding: 12px 18px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); cursor: pointer; margin-bottom: 10px; transition: all 0.2s; }
-    .skill-tab.active, .skill-tab:hover { border-color: rgba(0, 229, 192, 0.4); background: rgba(0, 229, 192, 0.05); }
-    .skill-tab-label { font-weight: 700; flex: 1; }
-    .skill-panel { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
-    .sbar { margin-bottom: 18px; }
-    .sbar-top { display: flex; justify-content: space-between; margin-bottom: 6px; }
-    .sbar-track { height: 3px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; }
-    .sbar-fill { width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent), var(--blue)); border-radius: 4px; transition: width 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-
-    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; }
-    .proj-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: all 0.2s; }
-    .proj-card:hover { transform: translateY(-4px); border-color: rgba(0,229,192,0.3); }
-    .proj-name { font-size: 1.2rem; font-weight: 800; margin-bottom: 8px; }
-    .proj-desc { font-size: 0.82rem; color: var(--muted); margin: 12px 0; line-height: 1.6; }
-    .proj-stack { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
-    .proj-stack span { font-family: 'Space Mono', monospace; font-size: 0.55rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 3px 8px; border-radius: 4px; }
-    .proj-link { font-family: 'Space Mono', monospace; font-size: 0.6rem; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
-
-    .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
-    .cert-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
-    .cert-issuer { font-size: 0.6rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
-    .cert-name { font-weight: 600; margin-bottom: 6px; }
-    .cert-badge { display: inline-block; font-size: 0.55rem; margin-top: 10px; padding: 3px 8px; border-radius: 20px; background: rgba(0,229,192,0.1); color: var(--accent); }
-    .cert-badge.wip { background: rgba(255,107,53,0.1); color: var(--warn); }
-
-    footer { border-top: 1px solid var(--border); padding: 24px 6vw; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.7rem; color: var(--muted); }
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    @media (max-width: 700px) { .skills-layout { grid-template-columns: 1fr; } }
+    footer{border-top:1px solid var(--border);padding:24px 6vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.7rem;color:var(--muted);background:var(--bg2);}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
   </style>
 </head>
 <body>
 <div id="scroll-progress"></div>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="ring"></div>
 
 <nav>
-  <a href="#" class="nav-logo"><div class="nav-pulse"></div> L.CHAUKE</a>
+  <a href="#" class="nav-logo"><div class="nav-pulse"></div>L.CHAUKE</a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certs</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-right" style="display:flex; gap:12px; align-items:center">
+  <div style="display:flex;gap:12px;align-items:center;">
     <div class="open-badge">Open for Work</div>
-    <a href="#" class="nav-cta" id="cvPlaceholder">📄 CV</a>
-    <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+    <a href="mailto:libertyengetelo@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<div class="mobile-menu" id="mob"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certs</a><a href="#contact">Contact</a></div>
+<div class="mobile-menu" id="mob">
+  <a href="#about">About</a><a href="#experience">Experience</a>
+  <a href="#skills">Skills</a><a href="#projects">Projects</a>
+  <a href="#certifications">Certs</a><a href="#contact">Contact</a>
+</div>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag" style="font-family:'Space Mono'; color:var(--accent); margin-bottom:20px;">⚡ Full-Stack + AI Integration</div>
+      <div class="hero-tag">Full-Stack + Data & AI Integration</div>
       <h1 class="hero-name"><span class="dim">Liberty</span><br><span class="hi">Chauke</span></h1>
-      <p class="hero-role">Full-Stack Developer & Systems Engineer | Data Analysis & AI Integration</p>
-      <p class="hero-desc">Computer Science student at Tshwane University of Technology (completing July 2026). 6 months industry experience building intelligent data platforms, enterprise apps, and rule‑based AI engines. Remote‑ready, available immediately for graduate/internship roles.</p>
+      <p class="hero-role">Full-Stack Developer &amp; Systems Engineer | Data Analysis &amp; AI Integration</p>
+      <p class="hero-desc">Computer Science student at Tshwane University of Technology. 6 months industry experience building intelligent data platforms, enterprise apps, and rule-based AI engines. Available immediately for junior/graduate/internship roles.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">Explore Work →</a>
         <a href="https://github.com/MhlengweLibertyLees" target="_blank" class="btn-ghost">GitHub</a>
-        <a href="#" class="btn-cv" id="cvHero">⬇️ Download CV</a>
+        <a href="mailto:libertyengetelo@gmail.com" class="btn-cv">Contact Me</a>
       </div>
       <div class="hero-stats">
-        <div><div class="stat-num">7<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
+        <div><div class="stat-num">6<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
         <div><div class="stat-num">9<span>+</span></div><div class="stat-label">Certifications</div></div>
         <div><div class="stat-num">83<span>%</span></div><div class="stat-label">Web Computing</div></div>
-        <div><div class="stat-num">AI<span>⚡</span></div><div class="stat-label">Rule-Based Engines</div></div>
+        <div><div class="stat-num">AI<span>&#9889;</span></div><div class="stat-label">Rule-Based Engines</div></div>
       </div>
     </div>
-    <div class="hero-photo-wrap"><div class="hero-photo-card"><img src="my_photo.jpeg" alt="Liberty Chauke portrait" onerror="this.src='https://placehold.co/400x500/0d1320/00e5c0?text=L.CHAUKE'"><div class="photo-caption"><div class="photo-caption-name">Liberty E. Chauke</div><div class="photo-caption-role">Software Engineer (Intern+)</div></div></div></div>
+    <div>
+      <div class="hero-photo-card">
+        <img src="my_photo.jpeg" alt="Liberty Chauke" onerror="this.src='https://placehold.co/400x500/0E6655/ffffff?text=L.CHAUKE'">
+        <div class="photo-caption">
+          <div class="photo-caption-name">Liberty E. Chauke</div>
+          <div class="photo-caption-role">Software Engineer</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="about">
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg2);">
   <div class="section-label reveal">01 — Core Profile</div>
-  <div class="about-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:48px;">
-    <div class="reveal"><h2 class="section-title">Data‑driven engineering meets full‑stack craft</h2><p style="color:var(--muted); margin-bottom:16px;">Motivated Computer Science Diploma student (NQF Level 6) with 6 months professional experience. I build intelligent data systems, analytics dashboards, and secure enterprise applications. Strengths include full-stack development (PHP 8, Java EE, JS), AI integration (rule-based engines, anomaly detection, risk scoring), and advanced SQL.</p><div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;"><span class="tag" style="border:1px solid var(--accent); padding:4px 12px; border-radius:20px;">PHP 8.0+</span><span class="tag">Java EE</span><span class="tag">Python/JS</span><span class="tag">Predictive Modeling</span><span class="tag">Security-first</span></div></div>
-    <div class="edu-card reveal"><div class="edu-card-title" style="font-weight:800;">🎓 Education</div><div><div class="exp-meta">2022 – July 2026</div><div class="exp-title">Diploma in Computer Science (NQF 6)</div><div>Tshwane University of Technology · 360 credits · Web Computing: 83% (Distinction)</div><div style="margin-top:16px;"><div class="exp-meta">2021</div><div class="exp-title">Diploma in Contact Centre Management</div><div>Computer Literacy 89% (Distinction) · Technical Support Systems</div></div></div></div>
+  <div class="about-grid">
+    <div class="reveal">
+      <h2 class="section-title">Data-driven engineering meets full-stack craft</h2>
+      <p style="color:var(--muted);margin-bottom:16px;line-height:1.75;">Motivated Computer Science Diploma student (NQF Level 6) with 6 months professional experience. I build intelligent data systems, analytics dashboards, and secure enterprise applications. Strengths include full-stack development (PHP 8, Java EE, JS), AI integration (rule-based engines, anomaly detection, risk scoring), and advanced SQL.</p>
+      <div style="margin-top:24px;">
+        <span class="tag">PHP 8.0+</span><span class="tag">Java EE</span><span class="tag">Python</span>
+        <span class="tag">SQL / MySQL</span><span class="tag">AI Engines</span><span class="tag">Chart.js</span>
+        <span class="tag">Security-first</span><span class="tag">Agile/Scrum</span>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div style="font-weight:800;font-size:1rem;color:var(--navy);margin-bottom:20px;">Education</div>
+      <div style="margin-bottom:20px;">
+        <div class="exp-meta">January 2022 – July 2026</div>
+        <div class="exp-title">Diploma in Computer Science (NQF Level 6)</div>
+        <div style="color:var(--muted);font-size:0.85rem;margin-top:6px;">Tshwane University of Technology · 360 Credits</div>
+        <div style="color:var(--teal);font-weight:700;font-size:0.85rem;margin-top:6px;">Web Computing: 83% — Distinction</div>
+      </div>
+      <div style="border-top:1px solid var(--border);padding-top:16px;">
+        <div style="font-weight:700;font-size:0.82rem;color:var(--navy);margin-bottom:8px;">Key modules</div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.7;">Advanced OOP · Database Principles (SQL/PL-SQL/Oracle) · Internet Programming (Java EE) · Mobile Computing (Kotlin) · Software Engineering & QA · OS (Linux) · Information Security · Agile Development</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="experience" style="background:var(--bg2);">
+<!-- EXPERIENCE -->
+<section id="experience">
   <div class="section-label reveal">02 — Work Experience</div>
   <h2 class="section-title reveal">Real impact, production systems</h2>
   <div class="exp-card reveal">
     <div class="exp-title">Full Stack Software Developer Intern</div>
-    <div class="exp-meta">Thaboera IT Solutions · Aug 2025 – Jan 2026 (6 months) · Pretoria</div>
-    <ul class="exp-desc"><li>Built full-stack apps using JavaScript, PHP, Java EE, Bootstrap, MySQL — delivered production features in Agile environment.</li><li>Designed RESTful APIs connecting frontend to relational databases, ensuring clean data flow.</li><li>Hosted & deployed websites on Afrihost Resellers platform (SSL, domain config, server performance).</li><li>Performed QA, test case writing, debugging, and technical documentation. Daily standups & code reviews.</li></ul>
+    <div class="exp-meta">Thaboera IT Solutions · Aug 2025 – Jan 2026 · 6 Months · Pretoria, Gauteng</div>
+    <ul class="exp-desc">
+      <li>Built full-stack web applications using PHP 8.0+, Java EE, JavaScript, Bootstrap 5, and MySQL — delivering production-ready features in an Agile team environment.</li>
+      <li>Designed and integrated RESTful APIs connecting frontend interfaces to backend services and relational databases, ensuring clean multi-tier data flow.</li>
+      <li>Hosted and deployed websites on Afrihost Resellers platform — managing domain configuration, SSL certificates, database setup, and server performance and uptime.</li>
+      <li>Conducted software QA and testing: writing test cases, identifying defects, documenting findings, and verifying fixes before deployment.</li>
+      <li>Maintained technical documentation, participated in daily Agile standups, sprint planning, and code reviews with senior developers.</li>
+    </ul>
   </div>
-  <div class="exp-card reveal"><div class="exp-title">Independent Projects & AI Research</div><div class="exp-meta">2024 – present · Ivory Park, Gauteng</div><ul class="exp-desc"><li>Developed publicPulse_ai: rule-based AI engine for citizen complaint intelligence (hotspot detection, trend analysis, risk scoring).</li><li>Built analytics dashboards with Chart.js, Leaflet.js, and advanced MySQL aggregations.</li><li>Created enterprise Java EE systems (Expense Tracker, Workers Management) with GlassFish + JPA.</li></ul></div>
+  <div class="exp-card reveal">
+    <div class="exp-title">Independent Projects & AI Research</div>
+    <div class="exp-meta">2024 – Present · Ivory Park, Gauteng</div>
+    <ul class="exp-desc">
+      <li>Developed publicPulse_ai — rule-based AI engine for citizen complaint intelligence: hotspot detection, trend analysis, predictive recurrence, anomaly detection, and risk scoring.</li>
+      <li>Built analytics dashboards with Chart.js and Leaflet.js geospatial mapping using advanced MySQL aggregations and KPI calculations.</li>
+      <li>Created enterprise Java EE systems (Expense Tracker, Workers Management) with GlassFish server deployment and JPA persistence.</li>
+    </ul>
+  </div>
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg2);">
   <div class="section-label reveal">03 — Technical Arsenal</div>
   <h2 class="section-title reveal">Languages · AI · Databases · Cloud</h2>
   <div class="skills-layout reveal">
-    <div class="skill-tabs" id="skillTabs"><div class="skill-tab active" data-panel="languages"><span>💻</span><span class="skill-tab-label">Languages</span></div><div class="skill-tab" data-panel="web"><span>🌐</span><span class="skill-tab-label">Web & Frameworks</span></div><div class="skill-tab" data-panel="db"><span>🗄️</span><span class="skill-tab-label">Databases & Data</span></div><div class="skill-tab" data-panel="ai"><span>🧠</span><span class="skill-tab-label">AI & Data Analysis</span></div><div class="skill-tab" data-panel="tools"><span>⚙️</span><span class="skill-tab-label">Tools & DevOps</span></div><div class="skill-tab" data-panel="cloud"><span>☁️</span><span class="skill-tab-label">Cloud (AWS)</span></div></div>
+    <div id="skillTabs">
+      <div class="skill-tab active" data-panel="languages"><span class="skill-tab-icon">&#128187;</span><span class="skill-tab-label">Languages</span></div>
+      <div class="skill-tab" data-panel="web"><span class="skill-tab-icon">&#127760;</span><span class="skill-tab-label">Web & Frameworks</span></div>
+      <div class="skill-tab" data-panel="db"><span class="skill-tab-icon">&#128452;</span><span class="skill-tab-label">Databases & Data</span></div>
+      <div class="skill-tab" data-panel="ai"><span class="skill-tab-icon">&#129504;</span><span class="skill-tab-label">AI & Analytics</span></div>
+      <div class="skill-tab" data-panel="tools"><span class="skill-tab-icon">&#9881;</span><span class="skill-tab-label">Tools & DevOps</span></div>
+      <div class="skill-tab" data-panel="cloud"><span class="skill-tab-icon">&#9729;</span><span class="skill-tab-label">Cloud (AWS)</span></div>
+    </div>
     <div class="skill-panel" id="skillPanel"></div>
   </div>
 </section>
 
-<section id="projects" style="background:var(--bg2);">
+<!-- PROJECTS -->
+<section id="projects">
   <div class="section-label reveal">04 — Featured Builds</div>
-  <h2 class="section-title reveal">Intelligent systems & full‑stack applications</h2>
+  <h2 class="section-title reveal">Intelligent systems & full-stack applications</h2>
   <div class="proj-grid">
-    <div class="proj-card reveal"><div class="proj-name">publicPulse_ai</div><div class="proj-desc">Citizen complaint intelligence platform with rule-based AI: hotspot detection, trend analysis, predictive recurrence, anomaly detection, risk scoring (0-100). Advanced analytics dashboard + geospatial mapping.</div><div class="proj-stack"><span>PHP 8.0+</span><span>MySQL</span><span>Chart.js</span><span>Leaflet.js</span><span>RBAC</span></div><a href="https://github.com/MhlengweLibertyLees/publicPulse_ai" target="_blank" class="proj-link">GitHub →</a></div>
-    <div class="proj-card reveal"><div class="proj-name">Daily Task Management System</div><div class="proj-desc">Team productivity tracker (LAMP stack) with role-based access, CSV export, full audit trail, CSRF protection, deployed in live workplace.</div><div class="proj-stack"><span>PHP 8.0</span><span>MySQL</span><span>Bootstrap 5</span><span>JavaScript</span></div><a href="https://github.com/MhlengweLibertyLees/Daily-Task-Management-System" target="_blank" class="proj-link">Repository →</a></div>
-    <div class="proj-card reveal"><div class="proj-name">Personal Expense Tracker</div><div class="proj-desc">Java EE enterprise app (Servlets, JSP, EJB, JPA) with PDF report generation, category budgeting, deployed on GlassFish.</div><div class="proj-stack"><span>Java EE</span><span>JPA</span><span>Bootstrap</span><span>GlassFish</span></div><a href="https://github.com/MhlengweLibertyLees/Personal-Expense-Tracker" target="_blank" class="proj-link">GitHub →</a></div>
-    <div class="proj-card reveal"><div class="proj-name">OPFA Case Management DB</div><div class="proj-desc">POPIA‑compliant PostgreSQL database with RBAC, audit trails, SLA tracking for pension fund adjudication.</div><div class="proj-stack"><span>PostgreSQL</span><span>PL/pgSQL</span><span>RBAC</span></div><a href="https://github.com/MhlengweLibertyLees/OPFA-Case-Management-System-DB" target="_blank" class="proj-link">View →</a></div>
-    <div class="proj-card reveal"><div class="proj-name">Workers Management System</div><div class="proj-desc">Java EE CRUD app (JPA, EJB, JavaDB) deployed on GlassFish, MVC architecture.</div><div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JavaDB</span></div><a href="https://github.com/MhlengweLibertyLees/Workers-Management-System-WebApp" target="_blank" class="proj-link">Code →</a></div>
-    <div class="proj-card reveal"><div class="proj-name">Learner Management System</div><div class="proj-desc">Student records with role-based access, secure CRUD, JPA persistence, MVC design.</div><div class="proj-stack"><span>Java EE</span><span>Servlets/JSP</span><span>JPA</span></div><a href="https://github.com/MhlengweLibertyLees/LearnerManagementSystem" target="_blank" class="proj-link">GitHub →</a></div>
-  </div>
-</section>
-
-<section id="certifications">
-  <div class="section-label reveal">05 — Certifications & Growth</div>
-  <div class="certs-grid">
-    <div class="cert-card"><div class="cert-issuer">LinkedIn / CompTIA</div><div class="cert-name">Career Skills in Software Development</div><div class="cert-badge">Sep 2025</div></div>
-    <div class="cert-card"><div class="cert-issuer">freeCodeCamp</div><div class="cert-name">Legacy Responsive Web Design V8</div><div class="cert-badge">Jun 2025</div></div>
-    <div class="cert-card"><div class="cert-issuer">EDUCBA / Coursera</div><div class="cert-name">Java Spring Boot</div><div class="cert-badge">Mar 2026</div></div>
-    <div class="cert-card"><div class="cert-issuer">NVIDIA / Coursera</div><div class="cert-name">Introduction to Networking (87%)</div><div class="cert-badge">Nov 2023</div></div>
-    <div class="cert-card"><div class="cert-issuer">Univ of Maryland</div><div class="cert-name">Cybersecurity for Everyone</div><div class="cert-badge">Dec 2023</div></div>
-    <div class="cert-card"><div class="cert-issuer">AWS Academy</div><div class="cert-name">Cloud Foundations (In Progress)</div><div class="cert-badge wip">In Progress</div></div>
-    <div class="cert-card"><div class="cert-issuer">AWS</div><div class="cert-name">Developer Associate (In Progress)</div><div class="cert-badge wip">2026</div></div>
-    <div class="cert-card"><div class="cert-issuer">AWS</div><div class="cert-name">CI/CD & Deployment on AWS</div><div class="cert-badge wip">In Progress</div></div>
-  </div>
-</section>
-
-<section id="contact" style="background:var(--bg2);">
-  <div class="contact-inner" style="max-width:650px; margin:0 auto; text-align:center;">
-    <div class="section-label reveal" style="justify-content:center;">06 — Let’s Connect</div>
-    <h2 class="section-title reveal">Ready to build intelligent systems</h2>
-    <p class="reveal" style="color:var(--muted); margin-bottom:28px;">Available for Junior/Trainee/Graduate roles · Remote-ready · Immediate start</p>
-    <a href="mailto:libertyengetelo@gmail.com" class="contact-email" style="font-size:1.3rem; font-weight:700; color:var(--accent); text-decoration:none;">libertyengetelo@gmail.com</a>
-    <div class="contact-links" style="display:flex; justify-content:center; gap:16px; margin-top:32px; flex-wrap:wrap;">
-      <a href="tel:+27638045803" class="btn-ghost" style="padding:10px 20px;">📞 063 804 5803</a>
-      <a href="https://github.com/MhlengweLibertyLees" target="_blank" class="btn-ghost">🐙 GitHub</a>
-      <a href="https://linkedin.com/in/liberty-chauke-320188291" target="_blank" class="btn-ghost">🔗 LinkedIn</a>
-      <a href="https://mhlengwelibertylees.github.io/portfolio" target="_blank" class="btn-ghost">📁 Portfolio</a>
+    <div class="proj-card reveal">
+      <div class="proj-badge">Flagship</div>
+      <div class="proj-name">publicPulse_ai</div>
+      <div class="proj-desc">Citizen complaint intelligence platform with rule-based AI: hotspot detection, trend analysis, predictive recurrence, anomaly detection, and risk scoring (0-100). Advanced analytics dashboard with 7+ KPIs and geospatial mapping.</div>
+      <div class="proj-stack"><span>PHP 8.0+</span><span>MySQL 8.0+</span><span>Chart.js</span><span>Leaflet.js</span><span>RBAC</span><span>AI Engine</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/publicPulse_ai" target="_blank" class="proj-link">GitHub →</a>
     </div>
-    <!-- References section removed for security and privacy -->
+    <div class="proj-card reveal">
+      <div class="proj-name">Daily Task Management System</div>
+      <div class="proj-desc">Team productivity tracker (LAMP stack) with role-based access, CSV export, complete audit trail, and CSRF protection. Deployed and used in a real live workplace.</div>
+      <div class="proj-stack"><span>PHP 8.0+</span><span>MySQL</span><span>Bootstrap 5</span><span>JavaScript</span><span>LAMP</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Daily-Task-Management-System" target="_blank" class="proj-link">Repository →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-name">Personal Expense Tracker</div>
+      <div class="proj-desc">Java EE enterprise app with automated PDF report generation, category budgeting, financial analytics, and 3-tier architecture deployed on GlassFish server.</div>
+      <div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JPA</span><span>Bootstrap</span><span>GlassFish</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Personal-Expense-Tracker" target="_blank" class="proj-link">GitHub →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-name">OPFA Case Management Database</div>
+      <div class="proj-desc">POPIA-compliant PostgreSQL database with full RBAC, audit trails, SLA tracking, and comprehensive ERD documentation for pension fund adjudication.</div>
+      <div class="proj-stack"><span>PostgreSQL</span><span>PL/pgSQL</span><span>RBAC</span><span>POPIA</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/OPFA-Case-Management-System-DB" target="_blank" class="proj-link">View →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-name">Workers Management System</div>
+      <div class="proj-desc">Java EE enterprise CRUD application managing full worker records with JPA persistence to Apache Derby and clean MVC architecture on GlassFish.</div>
+      <div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JPA</span><span>JavaDB</span><span>GlassFish</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Workers-Management-System-WebApp" target="_blank" class="proj-link">Code →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-name">Learner Management System</div>
+      <div class="proj-desc">Student records system with role-based access control, secure CRUD operations, JPA persistence, and clean enterprise MVC design patterns.</div>
+      <div class="proj-stack"><span>Java EE</span><span>Servlets</span><span>JSP</span><span>JPA</span><span>SQL</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/LearnerManagementSystem" target="_blank" class="proj-link">GitHub →</a>
+    </div>
   </div>
 </section>
 
-<footer><div>© 2026 Liberty Engetelo Chauke — Built with intention</div><div>Ivory Park, Midrand · South Africa · Remote-ready</div></footer>
+<!-- CERTIFICATIONS -->
+<section id="certifications" style="background:var(--bg2);">
+  <div class="section-label reveal">05 — Certifications & Growth</div>
+  <h2 class="section-title reveal">Continuous learning</h2>
+  <div class="certs-grid">
+    <div class="cert-card reveal"><div class="cert-issuer">LinkedIn Learning / CompTIA</div><div class="cert-name">Career Skills in Software Development</div><div class="cert-badge">Sep 2025 · 1 CEU</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">freeCodeCamp</div><div class="cert-name">Legacy Responsive Web Design V8</div><div class="cert-badge">Jun 2025 · ~300 hrs</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">EDUCBA / Coursera</div><div class="cert-name">Java Spring Boot</div><div class="cert-badge">Mar 2026</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">NVIDIA / Coursera</div><div class="cert-name">Introduction to Networking</div><div class="cert-badge">Nov 2023 · 87%</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">University of Maryland</div><div class="cert-name">Cybersecurity for Everyone</div><div class="cert-badge">Dec 2023</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">Coursera</div><div class="cert-name">Build a Free Website with WordPress</div><div class="cert-badge">Nov 2023</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">AWS Academy</div><div class="cert-name">Cloud Foundations</div><div class="cert-badge wip">In Progress 2026</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">Amazon Web Services</div><div class="cert-name">Developer Associate (DVA-C02)</div><div class="cert-badge wip">In Progress 2026</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">Amazon Web Services</div><div class="cert-name">CI/CD &amp; Deployment on AWS</div><div class="cert-badge wip">In Progress 2026</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal" style="justify-content:center;">06 — Let's Connect</div>
+    <h2 class="section-title reveal">Ready to build intelligent systems</h2>
+    <p class="reveal" style="color:var(--muted);margin-bottom:28px;">Available for Junior · Trainee · Graduate · Internship roles · Remote-ready · Immediate start</p>
+    <a href="mailto:libertyengetelo@gmail.com" class="contact-email reveal">libertyengetelo@gmail.com</a>
+    <div class="contact-links reveal">
+      <a href="tel:+27638045803" class="btn-ghost">063 804 5803</a>
+      <a href="https://github.com/MhlengweLibertyLees" target="_blank" class="btn-ghost">GitHub</a>
+      <a href="https://linkedin.com/in/liberty-chauke-320188291" target="_blank" class="btn-ghost">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Liberty Engetelo Chauke — Built with intention</div>
+  <div>Ivory Park, Midrand · South Africa · Remote-ready</div>
+</footer>
 
 <script>
-  // cursor & interactions
-  const cur = document.getElementById('cursor'), ring = document.getElementById('ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-  function animateCursor() { cur.style.transform = `translate(${mx-4}px, ${my-4}px)`; rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.transform = `translate(${rx-16}px, ${ry-16}px)`; requestAnimationFrame(animateCursor); }
-  animateCursor();
-  document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => { ring.style.width = '44px'; ring.style.height = '44px'; }); el.addEventListener('mouseleave', () => { ring.style.width = '32px'; ring.style.height = '32px'; }); });
-  window.addEventListener('scroll', () => { document.getElementById('scroll-progress').style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%'; });
-  const ham = document.getElementById('ham'), mob = document.getElementById('mob');
-  ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
-  function closeMob() { ham.classList.remove('open'); mob.classList.remove('open'); }
-  document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', closeMob));
+  window.addEventListener('scroll',()=>{
+    document.getElementById('scroll-progress').style.width=
+      (window.scrollY/(document.body.scrollHeight-window.innerHeight)*100)+'%';
+  });
+  const ham=document.getElementById('ham'),mob=document.getElementById('mob');
+  ham.addEventListener('click',()=>mob.classList.toggle('open'));
+  document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>mob.classList.remove('open')));
 
-  // skill data + AI/Data panel
-  const skillDB = {
-    languages: { title: "Languages", bars: [{ n: "Java / Java EE", p: 82 }, { n: "JavaScript (ES6+)", p: 78 }, { n: "PHP 8.0+", p: 80 }, { n: "Python", p: 68 }, { n: "SQL / PL-SQL", p: 85 }, { n: "Kotlin", p: 65 }, { n: "TypeScript", p: 58 }] },
-    web: { title: "Web & Frameworks", bars: [{ n: "Java EE (Servlets, JSP, EJB)", p: 80 }, { n: "Spring Boot", p: 65 }, { n: "Bootstrap 5 / Tailwind", p: 84 }, { n: "RESTful APIs", p: 78 }, { n: "React (learning)", p: 45 }, { n: "WordPress", p: 76 }] },
-    db: { title: "Databases & Data Engineering", bars: [{ n: "MySQL / PostgreSQL", p: 86 }, { n: "Oracle XE / SQL*Plus", p: 74 }, { n: "JPA / Hibernate", p: 77 }, { n: "Database Normalization", p: 82 }, { n: "Complex Queries / Optimization", p: 80 }] },
-    ai: { title: "AI & Data Analysis", bars: [{ n: "Rule-Based AI Engines", p: 84 }, { n: "Predictive Modeling / Trend Analysis", p: 76 }, { n: "Anomaly Detection / Risk Scoring", p: 78 }, { n: "Analytics Dashboards (Chart.js)", p: 82 }, { n: "Geospatial Analysis (Leaflet)", p: 75 }, { n: "KPI Development", p: 80 }] },
-    tools: { title: "Tools & DevOps", bars: [{ n: "Git / GitHub", p: 85 }, { n: "Linux CLI (Ubuntu)", p: 74 }, { n: "GlassFish / XAMPP", p: 80 }, { n: "Agile / Scrum", p: 78 }, { n: "CI/CD Concepts", p: 60 }] },
-    cloud: { title: "Cloud (AWS in progress)", bars: [{ n: "AWS Cloud Foundations", p: 48 }, { n: "AWS Developer Associate", p: 35 }, { n: "IAM / Compute / Storage", p: 42 }, { n: "CI/CD on AWS", p: 30 }] }
+  const skillDB={
+    languages:{title:"Languages",bars:[{n:"SQL / PL-SQL",p:86},{n:"PHP 8.0+",p:82},{n:"Java / Java EE",p:80},{n:"JavaScript (ES6+)",p:78},{n:"Python",p:68},{n:"Kotlin",p:65},{n:"TypeScript",p:58}]},
+    web:{title:"Web & Frameworks",bars:[{n:"Bootstrap 5 / HTML5 / CSS3",p:87},{n:"Java EE (Servlets, JSP, EJB)",p:80},{n:"RESTful API Design",p:78},{n:"Spring Boot",p:65},{n:"WordPress",p:76},{n:"React (Learning)",p:45}]},
+    db:{title:"Databases & Data Engineering",bars:[{n:"MySQL 8.0+ / PostgreSQL",p:86},{n:"Database Normalization & ERD",p:84},{n:"ETL Concepts & Data Pipelines",p:72},{n:"Oracle XE / JPA / JPQL",p:76},{n:"Dimensional Modelling",p:70},{n:"Metadata Management",p:68}]},
+    ai:{title:"AI & Analytics",bars:[{n:"Rule-Based AI Engines",p:84},{n:"KPI Dashboards (Chart.js)",p:82},{n:"Hotspot & Anomaly Detection",p:78},{n:"Geospatial Mapping (Leaflet.js)",p:75},{n:"Predictive Modelling",p:72},{n:"Power BI (Learning)",p:40},{n:"Azure (Learning)",p:35}]},
+    tools:{title:"Tools & DevOps",bars:[{n:"Git / GitHub",p:86},{n:"Linux / Ubuntu CLI",p:74},{n:"GlassFish / XAMPP / Apache",p:80},{n:"Agile / Scrum",p:78},{n:"Microsoft Office Suite",p:82},{n:"Afrihost Hosting / cPanel",p:72}]},
+    cloud:{title:"Cloud (AWS — In Progress)",bars:[{n:"AWS Cloud Foundations",p:50},{n:"AWS Developer Associate",p:38},{n:"IAM / Compute / Storage",p:44},{n:"CI/CD on AWS",p:32}]},
   };
-  function renderPanel(id) { const d = skillDB[id]; document.getElementById('skillPanel').innerHTML = `<div class="panel-title" style="font-weight:800; margin-bottom:24px;">${d.title}</div>${d.bars.map((b, i) => `<div class="sbar"><div class="sbar-top"><span>${b.n}</span><span style="color:var(--accent);">${b.p}%</span></div><div class="sbar-track"><div class="sbar-fill" data-p="${b.p}" style="transition-delay:${i*0.05}s"></div></div></div>`).join('')}`; setTimeout(() => { document.querySelectorAll('.sbar-fill').forEach(el => el.style.width = el.dataset.p + '%'); }, 80); }
-  renderPanel('languages');
-  document.querySelectorAll('.skill-tab').forEach(tab => { tab.addEventListener('click', () => { document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active')); tab.classList.add('active'); renderPanel(tab.dataset.panel); }); });
-  const observer = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')), { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // CV placeholder alert
-  const cvBtns = document.querySelectorAll('#cvPlaceholder, #cvHero');
-  cvBtns.forEach(btn => btn.addEventListener('click', (e) => { e.preventDefault(); alert("📄 Liberty Chauke CV — available on request via email or LinkedIn. PDF ready for download upon contact."); }));
+  function renderPanel(id){
+    const d=skillDB[id];
+    document.getElementById('skillPanel').innerHTML=
+      `<div style="font-weight:800;margin-bottom:24px;color:var(--navy);">${d.title}</div>`+
+      d.bars.map((b,i)=>
+        `<div class="sbar"><div class="sbar-top"><span class="sbar-name">${b.n}</span><span class="sbar-pct">${b.p}%</span></div><div class="sbar-track"><div class="sbar-fill" data-p="${b.p}" style="transition-delay:${i*0.06}s"></div></div></div>`
+      ).join('');
+    setTimeout(()=>document.querySelectorAll('.sbar-fill').forEach(el=>el.style.width=el.dataset.p+'%'),80);
+  }
+  renderPanel('languages');
+  document.querySelectorAll('.skill-tab').forEach(tab=>{
+    tab.addEventListener('click',()=>{
+      document.querySelectorAll('.skill-tab').forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      renderPanel(tab.dataset.panel);
+    });
+  });
+
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
