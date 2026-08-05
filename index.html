@@ -3,19 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liberty Chauke · Full-Stack & AI Systems Engineer</title>
-  <meta name="description" content="Liberty Chauke – Full-Stack Developer & Systems Engineer | Data Analysis & AI Integration. CS Diploma (TUT). Open to junior/graduate roles.">
-  <meta name="keywords" content="Liberty Chauke, Full-Stack Developer, AI Integration, Data Analysis, Java EE, PHP, MySQL, Rule-Based AI, South Africa, TUT">
+
+  <!-- SEO: Primary -->
+  <title>Liberty Chauke | Liberty Engetelo Chauke · Junior Software Developer · Midrand, South Africa</title>
+  <meta name="description" content="Liberty Chauke (Liberty Engetelo Chauke) is a Junior Software Developer based in Midrand, Gauteng, South Africa. CS Graduate from TUT. PHP, Java, JavaScript, MySQL. Open to junior developer roles.">
+  <meta name="keywords" content="Liberty Chauke, Liberty Engetelo Chauke, Junior Software Developer, PHP Developer, Java Developer, MySQL, JavaScript, TUT Graduate, Midrand, Gauteng, South Africa, Software Developer South Africa">
   <meta name="author" content="Liberty Engetelo Chauke">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0E6655">
-  <link rel="canonical" href="https://MhlengweLibertyLees.github.io">
-  <meta property="og:title" content="Liberty Chauke · Full-Stack & AI Systems Engineer">
-  <meta property="og:description" content="Building intelligent data systems, analytics platforms, and full-stack applications.">
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="Liberty Chauke · Junior Software Developer · South Africa">
+  <meta property="og:description" content="Liberty Engetelo Chauke — Junior Software Developer from Midrand, Gauteng. CS Graduate, TUT. PHP, Java, JavaScript, MySQL. Open to junior roles.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://MhlengweLibertyLees.github.io">
-  <meta property="og:image" content="https://MhlengweLibertyLees.github.io/profile.png">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://MhlengweLibertyLees.github.io/my_photo.jpeg">
+  <meta property="og:locale" content="en_ZA">
+
+  <!-- SEO: Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Liberty Chauke · Junior Software Developer">
+  <meta name="twitter:description" content="Junior Software Developer from Midrand, South Africa. CS Graduate from TUT.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://MhlengweLibertyLees.github.io">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Liberty Engetelo Chauke",
+    "alternateName": "Liberty Chauke",
+    "jobTitle": "Junior Software Developer",
+    "url": "https://MhlengweLibertyLees.github.io",
+    "sameAs": [
+      "https://github.com/MhlengweLibertyLees",
+      "https://linkedin.com/in/liberty-chauke-320188291"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Midrand",
+      "addressRegion": "Gauteng",
+      "addressCountry": "ZA"
+    },
+    "email": "libertyengetelo@gmail.com",
+    "telephone": "+27638045803",
+    "knowsAbout": ["PHP", "Java", "JavaScript", "MySQL", "Software Development", "Web Development"]
+  }
+  </script>
+
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     :root{
@@ -27,7 +67,6 @@
       --border2:rgba(14,102,85,0.25);
       --text:#1C2833;
       --muted:#566573;
-      --light:#8fa3a0;
       --teal:#0E6655;
       --teal2:#148F77;
       --teal3:#1ABC9C;
@@ -41,8 +80,9 @@
     ::-webkit-scrollbar-thumb{background:var(--teal);border-radius:4px;}
     #scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal3));width:0%;z-index:200;}
 
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 6vw;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
-    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px;}
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 6vw;background:rgba(255,255,255,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px;}
     .nav-pulse{width:8px;height:8px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite;}
     @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(14,102,85,0.4);}50%{box-shadow:0 0 0 6px rgba(14,102,85,0);}}
     .open-badge{font-family:'Space Mono',monospace;font-size:0.58rem;background:var(--teal-pale);color:var(--teal);border:1px solid var(--border2);padding:3px 10px;border-radius:40px;letter-spacing:0.06em;display:flex;align-items:center;gap:6px;}
@@ -59,11 +99,11 @@
     .mobile-menu a{font-family:'Space Mono',monospace;color:var(--muted);text-decoration:none;text-transform:uppercase;font-size:0.8rem;}
     @media(max-width:860px){.nav-links{display:none;}.hamburger{display:flex;}}
 
+    /* SECTIONS */
     section{padding:90px 6vw;}
     .section-label{font-family:'Space Mono',monospace;font-size:0.64rem;color:var(--teal);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px;}
     .section-label::after{content:'';flex:1;height:1px;background:var(--border);max-width:52px;}
     .section-title{font-family:'Syne',sans-serif;font-size:clamp(1.7rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin-bottom:16px;color:var(--navy);}
-    .section-sub{color:var(--muted);max-width:550px;margin-bottom:48px;font-size:0.92rem;}
 
     /* HERO */
     .hero{min-height:100vh;display:flex;align-items:center;padding:120px 6vw 80px;background:linear-gradient(135deg,#f4f9f7 0%,#ffffff 60%);}
@@ -75,13 +115,11 @@
     .hero-role{font-family:'Space Mono',monospace;font-size:0.82rem;color:var(--teal2);margin-bottom:20px;}
     .hero-desc{max-width:520px;color:var(--muted);margin-bottom:32px;line-height:1.75;}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;}
-    .btn-primary,.btn-ghost,.btn-cv{font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;padding:12px 24px;border-radius:4px;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;}
+    .btn-primary,.btn-ghost{font-family:'Space Mono',monospace;font-size:0.7rem;font-weight:700;padding:12px 24px;border-radius:4px;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;}
     .btn-primary{background:var(--teal);color:#fff;}
     .btn-primary:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 8px 28px var(--shadow);}
     .btn-ghost{border:1.5px solid var(--teal);color:var(--teal);}
     .btn-ghost:hover{background:var(--teal-pale);}
-    .btn-cv{border:1px solid var(--border2);color:var(--text);}
-    .btn-cv:hover{border-color:var(--teal);color:var(--teal);}
     .hero-stats{display:flex;gap:40px;border-top:1px solid var(--border);padding-top:30px;flex-wrap:wrap;}
     .stat-num{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1;color:var(--navy);}
     .stat-num span{color:var(--teal);}
@@ -112,13 +150,10 @@
     @media(max-width:700px){.skills-layout{grid-template-columns:1fr;}}
     .skill-tab{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:10px;border:1px solid var(--border);background:var(--card);cursor:pointer;margin-bottom:10px;transition:all 0.2s;}
     .skill-tab.active,.skill-tab:hover{border-color:var(--teal2);background:var(--teal-pale);}
-    .skill-tab-icon{font-size:16px;}
     .skill-tab-label{font-weight:700;flex:1;color:var(--navy);}
     .skill-panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;box-shadow:0 2px 12px var(--shadow);}
     .sbar{margin-bottom:18px;}
     .sbar-top{display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;}
-    .sbar-name{color:var(--text);}
-    .sbar-pct{color:var(--teal);font-weight:700;}
     .sbar-track{height:4px;background:var(--bg3);border-radius:4px;overflow:hidden;}
     .sbar-fill{width:0%;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal3));border-radius:4px;transition:width 0.9s cubic-bezier(0.2,0.9,0.4,1.1);}
 
@@ -143,7 +178,6 @@
     .cert-badge{display:inline-block;font-size:0.58rem;margin-top:10px;padding:3px 10px;border-radius:20px;background:var(--teal-pale);color:var(--teal);font-family:'Space Mono',monospace;}
     .cert-badge.wip{background:#FEF9F0;color:#E67E22;border:1px solid rgba(230,126,34,0.3);}
 
-    /* CONTACT */
     .contact-inner{max-width:650px;margin:0 auto;text-align:center;}
     .contact-email{font-size:1.3rem;font-weight:700;color:var(--teal);text-decoration:none;display:block;margin-bottom:8px;}
     .contact-email:hover{color:var(--teal2);}
@@ -183,28 +217,31 @@
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag">Full-Stack + Data & AI Integration</div>
-      <h1 class="hero-name"><span class="dim">Liberty</span><br><span class="hi">Chauke</span></h1>
-      <p class="hero-role">Full-Stack Developer &amp; Systems Engineer | Data Analysis &amp; AI Integration</p>
-      <p class="hero-desc">Computer Science student at Tshwane University of Technology. 6 months industry experience building intelligent data platforms, enterprise apps, and rule-based AI engines. Available immediately for junior/graduate/internship roles.</p>
+      <div class="hero-tag">Junior Software Developer · Open to Work</div>
+      <h1 class="hero-name">
+        <span class="dim">Liberty</span><br>
+        <span class="hi">Chauke</span>
+      </h1>
+      <p class="hero-role">Junior Software Developer | PHP | Java | JavaScript | MySQL</p>
+      <p class="hero-desc">I am Liberty Engetelo Chauke, a Computer Science graduate from Tshwane University of Technology based in Midrand, Gauteng. I have 12 months of internship experience building web applications and databases. I am looking for my first permanent junior developer role.</p>
       <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Explore Work →</a>
+        <a href="#projects" class="btn-primary">See My Projects</a>
         <a href="https://github.com/MhlengweLibertyLees" target="_blank" class="btn-ghost">GitHub</a>
-        <a href="mailto:libertyengetelo@gmail.com" class="btn-cv">Contact Me</a>
+        <a href="mailto:libertyengetelo@gmail.com" class="btn-ghost">Contact Me</a>
       </div>
       <div class="hero-stats">
-        <div><div class="stat-num">6<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
-        <div><div class="stat-num">9<span>+</span></div><div class="stat-label">Certifications</div></div>
+        <div><div class="stat-num">12<span>mo</span></div><div class="stat-label">Work Experience</div></div>
+        <div><div class="stat-num">5<span>+</span></div><div class="stat-label">Projects Built</div></div>
         <div><div class="stat-num">83<span>%</span></div><div class="stat-label">Web Computing</div></div>
-        <div><div class="stat-num">AI<span>&#9889;</span></div><div class="stat-label">Rule-Based Engines</div></div>
+        <div><div class="stat-num">2<span>+</span></div><div class="stat-label">Internships Done</div></div>
       </div>
     </div>
     <div>
       <div class="hero-photo-card">
-        <img src="my_photo.jpeg" alt="Liberty Chauke" onerror="this.src='https://placehold.co/400x500/0E6655/ffffff?text=L.CHAUKE'">
+        <img src="my_photo.jpeg" alt="Liberty Engetelo Chauke - Junior Software Developer from Midrand South Africa" onerror="this.src='https://placehold.co/400x500/0E6655/ffffff?text=L.CHAUKE'">
         <div class="photo-caption">
           <div class="photo-caption-name">Liberty E. Chauke</div>
-          <div class="photo-caption-role">Software Engineer</div>
+          <div class="photo-caption-role">Junior Software Developer</div>
         </div>
       </div>
     </div>
@@ -213,28 +250,29 @@
 
 <!-- ABOUT -->
 <section id="about" style="background:var(--bg2);">
-  <div class="section-label reveal">01 — Core Profile</div>
+  <div class="section-label reveal">About</div>
   <div class="about-grid">
     <div class="reveal">
-      <h2 class="section-title">Data-driven engineering meets full-stack craft</h2>
-      <p style="color:var(--muted);margin-bottom:16px;line-height:1.75;">Motivated Computer Science Diploma student (NQF Level 6) with 6 months professional experience. I build intelligent data systems, analytics dashboards, and secure enterprise applications. Strengths include full-stack development (PHP 8, Java EE, JS), AI integration (rule-based engines, anomaly detection, risk scoring), and advanced SQL.</p>
+      <h2 class="section-title">Who I am</h2>
+      <p style="color:var(--muted);margin-bottom:16px;line-height:1.75;">I am a Computer Science graduate from TUT. I enjoy building websites and web applications, working with databases, and learning new technologies. I have 12 months of real internship experience and I am still growing as a developer. I am looking for a junior role where I can contribute to a team and keep improving.</p>
       <div style="margin-top:24px;">
-        <span class="tag">PHP 8.0+</span><span class="tag">Java EE</span><span class="tag">Python</span>
-        <span class="tag">SQL / MySQL</span><span class="tag">AI Engines</span><span class="tag">Chart.js</span>
-        <span class="tag">Security-first</span><span class="tag">Agile/Scrum</span>
+        <span class="tag">PHP</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+        <span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">HTML5</span>
+        <span class="tag">CSS3</span><span class="tag">Bootstrap</span><span class="tag">Git</span>
       </div>
     </div>
     <div class="edu-card reveal">
       <div style="font-weight:800;font-size:1rem;color:var(--navy);margin-bottom:20px;">Education</div>
       <div style="margin-bottom:20px;">
-        <div class="exp-meta">January 2022 – July 2026</div>
-        <div class="exp-title">Diploma in Computer Science (NQF Level 6)</div>
-        <div style="color:var(--muted);font-size:0.85rem;margin-top:6px;">Tshwane University of Technology · 360 Credits</div>
+        <div class="exp-meta">2022 to 2026</div>
+        <div class="exp-title">Diploma in Computer Science</div>
+        <div style="color:var(--muted);font-size:0.85rem;margin-top:6px;">Tshwane University of Technology · Completed July 2026</div>
         <div style="color:var(--teal);font-weight:700;font-size:0.85rem;margin-top:6px;">Web Computing: 83% — Distinction</div>
       </div>
       <div style="border-top:1px solid var(--border);padding-top:16px;">
-        <div style="font-weight:700;font-size:0.82rem;color:var(--navy);margin-bottom:8px;">Key modules</div>
-        <div style="font-size:0.8rem;color:var(--muted);line-height:1.7;">Advanced OOP · Database Principles (SQL/PL-SQL/Oracle) · Internet Programming (Java EE) · Mobile Computing (Kotlin) · Software Engineering & QA · OS (Linux) · Information Security · Agile Development</div>
+        <div class="exp-meta">2020</div>
+        <div class="exp-title">National Senior Certificate (Grade 12)</div>
+        <div style="color:var(--muted);font-size:0.85rem;margin-top:4px;">Semendhe Secondary School</div>
       </div>
     </div>
   </div>
@@ -242,42 +280,43 @@
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="section-label reveal">02 — Work Experience</div>
-  <h2 class="section-title reveal">Real impact, production systems</h2>
+  <div class="section-label reveal">Experience</div>
+  <h2 class="section-title reveal">12 months of real work</h2>
+
   <div class="exp-card reveal">
-    <div class="exp-title">Full Stack Software Developer Intern</div>
-    <div class="exp-meta">Thaboera IT Solutions · Aug 2025 – Jan 2026 · 6 Months · Pretoria, Gauteng</div>
+    <div class="exp-title">Full Stack Developer Intern</div>
+    <div class="exp-meta">B&T Skills Development Trainings (PTY) LTD · Feb 2026 to Jul 2026 · 6 Months · Pretoria North</div>
     <ul class="exp-desc">
-      <li>Built full-stack web applications using PHP 8.0+, Java EE, JavaScript, Bootstrap 5, and MySQL — delivering production-ready features in an Agile team environment.</li>
-      <li>Designed and integrated RESTful APIs connecting frontend interfaces to backend services and relational databases, ensuring clean multi-tier data flow.</li>
-      <li>Hosted and deployed websites on Afrihost Resellers platform — managing domain configuration, SSL certificates, database setup, and server performance and uptime.</li>
-      <li>Conducted software QA and testing: writing test cases, identifying defects, documenting findings, and verifying fixes before deployment.</li>
-      <li>Maintained technical documentation, participated in daily Agile standups, sprint planning, and code reviews with senior developers.</li>
+      <li>Built web pages and web applications using PHP, JavaScript, HTML, and CSS.</li>
+      <li>Connected websites to MySQL databases and wrote SQL queries to store and retrieve data.</li>
+      <li>Wrote documentation and followed structured work processes and deadlines.</li>
+      <li>Worked as part of a team and reported to the Operations Manager.</li>
     </ul>
   </div>
+
   <div class="exp-card reveal">
-    <div class="exp-title">Independent Projects & AI Research</div>
-    <div class="exp-meta"> Feb 2026 – Present · Ivory Park, Gauteng</div>
+    <div class="exp-title">Software Developer Intern</div>
+    <div class="exp-meta">Thaboera IT Solutions · Aug 2025 to Jan 2026 · 6 Months · Midrand, Gauteng</div>
     <ul class="exp-desc">
-      <li>Developed publicPulse_ai — rule-based AI engine for citizen complaint intelligence: hotspot detection, trend analysis, predictive recurrence, anomaly detection, and risk scoring.</li>
-      <li>Built analytics dashboards with Chart.js and Leaflet.js geospatial mapping using advanced MySQL aggregations and KPI calculations.</li>
-      <li>Created enterprise Java EE systems (Expense Tracker, Workers Management) with GlassFish server deployment and JPA persistence.</li>
+      <li>Helped build websites and web applications for real clients using PHP, JavaScript, Java, and MySQL.</li>
+      <li>Deployed and managed live websites — set up domains, SSL certificates, and databases.</li>
+      <li>Tested software and fixed bugs before releasing to users.</li>
+      <li>Worked in an Agile team with daily standups, sprint planning, and code reviews.</li>
+      <li>Wrote technical documentation for all systems worked on.</li>
     </ul>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" style="background:var(--bg2);">
-  <div class="section-label reveal">03 — Technical Arsenal</div>
-  <h2 class="section-title reveal">Languages · AI · Databases · Cloud</h2>
+  <div class="section-label reveal">Skills</div>
+  <h2 class="section-title reveal">What I work with</h2>
   <div class="skills-layout reveal">
     <div id="skillTabs">
-      <div class="skill-tab active" data-panel="languages"><span class="skill-tab-icon">&#128187;</span><span class="skill-tab-label">Languages</span></div>
-      <div class="skill-tab" data-panel="web"><span class="skill-tab-icon">&#127760;</span><span class="skill-tab-label">Web & Frameworks</span></div>
-      <div class="skill-tab" data-panel="db"><span class="skill-tab-icon">&#128452;</span><span class="skill-tab-label">Databases & Data</span></div>
-      <div class="skill-tab" data-panel="ai"><span class="skill-tab-icon">&#129504;</span><span class="skill-tab-label">AI & Analytics</span></div>
-      <div class="skill-tab" data-panel="tools"><span class="skill-tab-icon">&#9881;</span><span class="skill-tab-label">Tools & DevOps</span></div>
-      <div class="skill-tab" data-panel="cloud"><span class="skill-tab-icon">&#9729;</span><span class="skill-tab-label">Cloud (AWS)</span></div>
+      <div class="skill-tab active" data-panel="languages"><span>💻</span>&nbsp;<span class="skill-tab-label">Languages</span></div>
+      <div class="skill-tab" data-panel="web"><span>🌐</span>&nbsp;<span class="skill-tab-label">Web and Frameworks</span></div>
+      <div class="skill-tab" data-panel="db"><span>🗄️</span>&nbsp;<span class="skill-tab-label">Databases</span></div>
+      <div class="skill-tab" data-panel="tools"><span>⚙️</span>&nbsp;<span class="skill-tab-label">Tools</span></div>
     </div>
     <div class="skill-panel" id="skillPanel"></div>
   </div>
@@ -285,72 +324,75 @@
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="section-label reveal">04 — Featured Builds</div>
-  <h2 class="section-title reveal">Intelligent systems & full-stack applications</h2>
+  <div class="section-label reveal">Projects</div>
+  <h2 class="section-title reveal">Things I have built</h2>
   <div class="proj-grid">
+
     <div class="proj-card reveal">
       <div class="proj-badge">Flagship</div>
       <div class="proj-name">publicPulse_ai</div>
-      <div class="proj-desc">Citizen complaint intelligence platform with rule-based AI: hotspot detection, trend analysis, predictive recurrence, anomaly detection, and risk scoring (0-100). Advanced analytics dashboard with 7+ KPIs and geospatial mapping.</div>
-      <div class="proj-stack"><span>PHP 8.0+</span><span>MySQL 8.0+</span><span>Chart.js</span><span>Leaflet.js</span><span>RBAC</span><span>AI Engine</span></div>
+      <div class="proj-desc">A web platform for collecting and analysing public complaints. Has a live dashboard showing graphs and maps, and a basic rule-based system for spotting complaint patterns. Built with PHP, MySQL, and JavaScript.</div>
+      <div class="proj-stack"><span>PHP 8</span><span>MySQL</span><span>JavaScript</span><span>Chart.js</span><span>Leaflet.js</span><span>Bootstrap</span></div>
       <a href="https://github.com/MhlengweLibertyLees/publicPulse_ai" target="_blank" class="proj-link">GitHub →</a>
     </div>
+
     <div class="proj-card reveal">
       <div class="proj-name">Daily Task Management System</div>
-      <div class="proj-desc">Team productivity tracker (LAMP stack) with role-based access, CSV export, complete audit trail, and CSRF protection. Deployed and used in a real live workplace.</div>
-      <div class="proj-stack"><span>PHP 8.0+</span><span>MySQL</span><span>Bootstrap 5</span><span>JavaScript</span><span>LAMP</span></div>
-      <a href="https://github.com/MhlengweLibertyLees/Daily-Task-Management-System" target="_blank" class="proj-link">Repository →</a>
+      <div class="proj-desc">A task tracking web application built for team use. Has role-based access for admins and members, task submission and editing, an audit trail, and CSV export for reports.</div>
+      <div class="proj-stack"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Daily-Task-Management-System" target="_blank" class="proj-link">GitHub →</a>
     </div>
-    <div class="proj-card reveal">
-      <div class="proj-name">Personal Expense Tracker</div>
-      <div class="proj-desc">Java EE enterprise app with automated PDF report generation, category budgeting, financial analytics, and 3-tier architecture deployed on GlassFish server.</div>
-      <div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JPA</span><span>Bootstrap</span><span>GlassFish</span></div>
-      <a href="https://github.com/MhlengweLibertyLees/Personal-Expense-Tracker" target="_blank" class="proj-link">GitHub →</a>
-    </div>
+
     <div class="proj-card reveal">
       <div class="proj-name">OPFA Case Management Database</div>
-      <div class="proj-desc">POPIA-compliant PostgreSQL database with full RBAC, audit trails, SLA tracking, and comprehensive ERD documentation for pension fund adjudication.</div>
-      <div class="proj-stack"><span>PostgreSQL</span><span>PL/pgSQL</span><span>RBAC</span><span>POPIA</span></div>
-      <a href="https://github.com/MhlengweLibertyLees/OPFA-Case-Management-System-DB" target="_blank" class="proj-link">View →</a>
+      <div class="proj-desc">A database I designed for a pension fund to manage and track cases. Has user access control, audit trails, and deadline tracking. Built with PostgreSQL and documented with a full ERD.</div>
+      <div class="proj-stack"><span>PostgreSQL</span><span>PL/pgSQL</span><span>RBAC</span><span>ERD</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/OPFA-Case-Management-System-DB" target="_blank" class="proj-link">GitHub →</a>
     </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-name">Personal Expense Tracker</div>
+      <div class="proj-desc">A Java web app for tracking personal spending. Organises expenses by category and creates PDF reports. Deployed on GlassFish server.</div>
+      <div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JPA</span><span>GlassFish</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Personal-Expense-Tracker" target="_blank" class="proj-link">GitHub →</a>
+    </div>
+
     <div class="proj-card reveal">
       <div class="proj-name">Workers Management System</div>
-      <div class="proj-desc">Java EE enterprise CRUD application managing full worker records with JPA persistence to Apache Derby and clean MVC architecture on GlassFish.</div>
-      <div class="proj-stack"><span>Java EE</span><span>EJB</span><span>JPA</span><span>JavaDB</span><span>GlassFish</span></div>
-      <a href="https://github.com/MhlengweLibertyLees/Workers-Management-System-WebApp" target="_blank" class="proj-link">Code →</a>
+      <div class="proj-desc">A Java web app for managing worker records. Supports adding, updating, deleting, and viewing workers. Built with Java EE and deployed on GlassFish.</div>
+      <div class="proj-stack"><span>Java EE</span><span>JPA</span><span>EJB</span><span>JavaDB</span></div>
+      <a href="https://github.com/MhlengweLibertyLees/Workers-Management-System-WebApp" target="_blank" class="proj-link">GitHub →</a>
     </div>
+
     <div class="proj-card reveal">
       <div class="proj-name">Learner Management System</div>
-      <div class="proj-desc">Student records system with role-based access control, secure CRUD operations, JPA persistence, and clean enterprise MVC design patterns.</div>
-      <div class="proj-stack"><span>Java EE</span><span>Servlets</span><span>JSP</span><span>JPA</span><span>SQL</span></div>
+      <div class="proj-desc">A Java web app for managing learner records. Supports CRUD operations with role-based access and JPA database persistence.</div>
+      <div class="proj-stack"><span>Java EE</span><span>Servlets</span><span>JSP</span><span>JPA</span></div>
       <a href="https://github.com/MhlengweLibertyLees/LearnerManagementSystem" target="_blank" class="proj-link">GitHub →</a>
     </div>
+
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" style="background:var(--bg2);">
-  <div class="section-label reveal">05 — Certifications & Growth</div>
+  <div class="section-label reveal">Certifications</div>
   <h2 class="section-title reveal">Continuous learning</h2>
   <div class="certs-grid">
-    <div class="cert-card reveal"><div class="cert-issuer">LinkedIn Learning / CompTIA</div><div class="cert-name">Career Skills in Software Development</div><div class="cert-badge">Sep 2025 · 1 CEU</div></div>
-    <div class="cert-card reveal"><div class="cert-issuer">freeCodeCamp</div><div class="cert-name">Legacy Responsive Web Design V8</div><div class="cert-badge">Jun 2025 · ~300 hrs</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">LinkedIn Learning / CompTIA</div><div class="cert-name">Career Skills in Software Development</div><div class="cert-badge">Sep 2025</div></div>
     <div class="cert-card reveal"><div class="cert-issuer">EDUCBA / Coursera</div><div class="cert-name">Java Spring Boot</div><div class="cert-badge">Mar 2026</div></div>
     <div class="cert-card reveal"><div class="cert-issuer">NVIDIA / Coursera</div><div class="cert-name">Introduction to Networking</div><div class="cert-badge">Nov 2023 · 87%</div></div>
     <div class="cert-card reveal"><div class="cert-issuer">University of Maryland</div><div class="cert-name">Cybersecurity for Everyone</div><div class="cert-badge">Dec 2023</div></div>
-    <div class="cert-card reveal"><div class="cert-issuer">Coursera</div><div class="cert-name">Build a Free Website with WordPress</div><div class="cert-badge">Nov 2023</div></div>
-    <div class="cert-card reveal"><div class="cert-issuer">AWS Academy</div><div class="cert-name">Cloud Foundations</div><div class="cert-badge wip">In Progress 2026</div></div>
-    <div class="cert-card reveal"><div class="cert-issuer">Amazon Web Services</div><div class="cert-name">Developer Associate (DVA-C02)</div><div class="cert-badge wip">In Progress 2026</div></div>
-    <div class="cert-card reveal"><div class="cert-issuer">Amazon Web Services</div><div class="cert-name">CI/CD &amp; Deployment on AWS</div><div class="cert-badge wip">In Progress 2026</div></div>
+    <div class="cert-card reveal"><div class="cert-issuer">AWS Academy</div><div class="cert-name">Cloud Foundations</div><div class="cert-badge wip">In Progress</div></div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <div class="section-label reveal" style="justify-content:center;">06 — Let's Connect</div>
-    <h2 class="section-title reveal">Ready to build intelligent systems</h2>
-    <p class="reveal" style="color:var(--muted);margin-bottom:28px;">Available for Junior · Trainee · Graduate · Internship roles · Remote-ready · Immediate start</p>
+    <div class="section-label reveal" style="justify-content:center;">Contact</div>
+    <h2 class="section-title reveal">Let's talk</h2>
+    <p class="reveal" style="color:var(--muted);margin-bottom:28px;">Available immediately for junior developer roles in Gauteng or remote</p>
     <a href="mailto:libertyengetelo@gmail.com" class="contact-email reveal">libertyengetelo@gmail.com</a>
     <div class="contact-links reveal">
       <a href="tel:+27638045803" class="btn-ghost">063 804 5803</a>
@@ -361,8 +403,8 @@
 </section>
 
 <footer>
-  <div>© 2026 Liberty Engetelo Chauke — Built with intention</div>
-  <div>Ivory Park, Midrand · South Africa · Remote-ready</div>
+  <div>© 2026 Liberty Engetelo Chauke · Junior Software Developer · Midrand, South Africa</div>
+  <div>Open to work · Available immediately</div>
 </footer>
 
 <script>
@@ -375,12 +417,23 @@
   document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>mob.classList.remove('open')));
 
   const skillDB={
-    languages:{title:"Languages",bars:[{n:"SQL / PL-SQL",p:86},{n:"PHP 8.0+",p:82},{n:"Java / Java EE",p:80},{n:"JavaScript (ES6+)",p:78},{n:"Python",p:68},{n:"Kotlin",p:65},{n:"TypeScript",p:58}]},
-    web:{title:"Web & Frameworks",bars:[{n:"Bootstrap 5 / HTML5 / CSS3",p:87},{n:"Java EE (Servlets, JSP, EJB)",p:80},{n:"RESTful API Design",p:78},{n:"Spring Boot",p:65},{n:"WordPress",p:76},{n:"React (Learning)",p:45}]},
-    db:{title:"Databases & Data Engineering",bars:[{n:"MySQL 8.0+ / PostgreSQL",p:86},{n:"Database Normalization & ERD",p:84},{n:"ETL Concepts & Data Pipelines",p:72},{n:"Oracle XE / JPA / JPQL",p:76},{n:"Dimensional Modelling",p:70},{n:"Metadata Management",p:68}]},
-    ai:{title:"AI & Analytics",bars:[{n:"Rule-Based AI Engines",p:84},{n:"KPI Dashboards (Chart.js)",p:82},{n:"Hotspot & Anomaly Detection",p:78},{n:"Geospatial Mapping (Leaflet.js)",p:75},{n:"Predictive Modelling",p:72},{n:"Power BI (Learning)",p:40},{n:"Azure (Learning)",p:35}]},
-    tools:{title:"Tools & DevOps",bars:[{n:"Git / GitHub",p:86},{n:"Linux / Ubuntu CLI",p:74},{n:"GlassFish / XAMPP / Apache",p:80},{n:"Agile / Scrum",p:78},{n:"Microsoft Office Suite",p:82},{n:"Afrihost Hosting / cPanel",p:72}]},
-    cloud:{title:"Cloud (AWS — In Progress)",bars:[{n:"AWS Cloud Foundations",p:50},{n:"AWS Developer Associate",p:38},{n:"IAM / Compute / Storage",p:44},{n:"CI/CD on AWS",p:32}]},
+    languages:{title:"Languages",bars:[
+      {n:"PHP",p:80},{n:"Java",p:76},{n:"JavaScript",p:75},
+      {n:"SQL",p:82},{n:"HTML5",p:88},{n:"CSS3",p:84}
+    ]},
+    web:{title:"Web and Frameworks",bars:[
+      {n:"Bootstrap 5",p:85},{n:"Java EE (Servlets, JSP)",p:74},
+      {n:"Spring Boot",p:55},{n:"REST APIs",p:70}
+    ]},
+    db:{title:"Databases",bars:[
+      {n:"MySQL",p:82},{n:"SQL Queries and Design",p:80},
+      {n:"PostgreSQL",p:65},{n:"JPA / Hibernate",p:68}
+    ]},
+    tools:{title:"Tools",bars:[
+      {n:"Git and GitHub",p:82},{n:"Linux CLI",p:68},
+      {n:"XAMPP / Apache",p:76},{n:"Microsoft Office 365",p:80},
+      {n:"GlassFish",p:72}
+    ]},
   };
 
   function renderPanel(id){
@@ -388,7 +441,7 @@
     document.getElementById('skillPanel').innerHTML=
       `<div style="font-weight:800;margin-bottom:24px;color:var(--navy);">${d.title}</div>`+
       d.bars.map((b,i)=>
-        `<div class="sbar"><div class="sbar-top"><span class="sbar-name">${b.n}</span><span class="sbar-pct">${b.p}%</span></div><div class="sbar-track"><div class="sbar-fill" data-p="${b.p}" style="transition-delay:${i*0.06}s"></div></div></div>`
+        `<div class="sbar"><div class="sbar-top"><span style="color:var(--text)">${b.n}</span><span style="color:var(--teal);font-weight:700;">${b.p}%</span></div><div class="sbar-track"><div class="sbar-fill" data-p="${b.p}" style="transition-delay:${i*0.07}s"></div></div></div>`
       ).join('');
     setTimeout(()=>document.querySelectorAll('.sbar-fill').forEach(el=>el.style.width=el.dataset.p+'%'),80);
   }
