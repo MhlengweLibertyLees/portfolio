@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main portfolio page -->
   <url>
-    <loc>https://mhlengwelibertylees.github.io/</loc>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- About section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#about</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Experience section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#experience</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#projects</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#skills</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Certifications section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#certifications</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact section -->
+  <url>
+    <loc>https://mhlengwelibertylees.github.io/portfolio/#contact</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
